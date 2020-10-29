@@ -6,6 +6,7 @@ function numerico() {
   for ( i = 0; i < x.length; i++ ) {
     text += x.elements[ i ].value;
   }
+
   var y = document.getElementById( "descricao" );
   var content = [];
   var text2 = "";
