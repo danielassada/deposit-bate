@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>CANVAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <style media="screen">
+    #local {
+      margin-left: -599px;
+      position: absolute;
+      z-index: 3;
+    }
+
+    #Canvas {
+      z-index: 2;
+    }
+
+  </style>
+
+  <body>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <canvas id="local" width="600" height="600"></canvas>
+
+    <div class="lateral">
+      <button type="button" name="button" onclick="casa()">click</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="function.js"></script> -->
+    <script type="text/javascript" src="render.js"></script>
+    <script type="text/javascript" src="render_local.js"></script>
+    <!-- <script type="text/javascript" src="sprites.js"></script> -->
+  </body>
+
+</html>

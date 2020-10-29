@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interleaver</title>
+  <style>
+    #tager,
+    #start-button,
+    #clear-button {
+      margin: 0 10px;
+      float: left;
+      height: 34px;
+    }
+
+    #form {
+      background-color: #FFFFFF;
+      box-shadow: 0 0 5px #777777;
+      background-color: #F3F3F3;
+      border-top: 1px solid #E7E7E7;
+      width: 550px;
+      margin-left: 50px;
+      display: inline-block;
+    }
+
+    #text-header {
+      background-color: #F3F3F3;
+      border-bottom: 1px solid #E7E7E7;
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      color: #6A5ACD;
+    }
+
+    .action-button {
+      background-color: #6A5ACD;
+      border: medium none;
+      color: #000;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      outline: medium none;
+      text-transform: uppercase;
+      text-align: center;
+      transition: background 0.3s ease 0.1s;
+      width: 129px;
+      line-height: 34px;
+    }
+
+    .action-button:hover {
+      background-color: #00AEEF;
+    }
+
+    #output {
+      width: 90 vw;
+      position: relative;
+      margin: auto;
+      white-space: pre;
+      text-align: center;
+      font-size: 25px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="form">
+
+    <div id="text-header"> pt second
+      <div class="shadow"></div>
+    </div>
+
+    <div id="text-block">
+      <form action="" id="foreigner">
+        <textarea class="form-control" rows="5" cols="71" id="comment"></textarea>
+      </form>
+      <form action="" id="ptbr">
+        <textarea class="form-control" rows="5" cols="71" id="comment"></textarea>
+      </form>
+    </div>
+
+    <div id="text-footer">
+      <div id="buttons">
+        <div id="start-button" onclick="interleaver()">
+          <div class="action-button">pronto</div>
+          <div id="start-button-progress" style="display: none;"></div>
+        </div>
+
+        <div id="tager" onclick="tager()">
+          <div class="action-button">to color</div>
+          <div id="start-button-progress" style="display: none;"></div>
+        </div>
+        <div id="start-button" onclick="numerico()">
+          <div class="action-button">numerico</div>
+          <div id="start-button-progress" style="display: none;"></div>
+        </div>
+        <div id="clear-button">
+          <div class="action-button">limpar</div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+  </div>
+  <div id="palette">
+    <button id="change_color" onclick="tager('red')" style="background-color:red;">Red</button>
+    <button id="change_color" onclick="tager('blue')" style="background-color:blue;">Blue</button>
+    <button id="change_color" onclick="tager('green')" style="background-color:green;">Green</button>
+    <button id="change_color" onclick="tager('skyblue')" style="background-color:skyblue;">SkyBlue</button>
+    <button id="change_color" onclick="tager('violet')" style="background-color:violet;">Violet</button>
+    <button id="change_color" onclick="tager('greenyellow')" style="background-color:greenyellow;">GreenYellow</button>
+    <button id="change_color" onclick="tager('indigo')" style="background-color:indigo;">Indigo</button>
+    <button id="change_color" onclick="tager('lightseagreen')" style="background-color:lightseagreen;">LightSeaGreen</button>
+    <button id="change_color" onclick="tager('maroon')" style="background-color:maroon;">Maroon</button>
+
+    <button id="change_color" onclick="tager('DarkOrange')" style="background-color:DarkOrange;">DarkOrange</button>
+    <button id="change_color" onclick="tager('DarkSalmon')" style="background-color:DarkSalmon;">DarkSalmon</button>
+    <button id="change_color" onclick="tager('DarkSeaGreen')" style="background-color:DarkSeaGreen;">DarkSeaGreen</button>
+    <button id="change_color" onclick="tager('Fuchsia')" style="background-color:Fuchsia;">Fuchsia</button>
+    <button id="change_color" onclick="tager('GoldenRod')" style="background-color:GoldenRod;">GoldenRod</button>
+    <button id="change_color" onclick="tager('Crimson')" style="background-color:Crimson;">Crimson</button>
+    <button id="change_color" onclick="tager('Aqua')" style="background-color:Aqua;">Aqua</button>
+  </div>
+  <div id="output" contenteditable>
+
+  </div>
+  <script>
+    var text, text2;
+    const atualize = () => {
+      var x = document.getElementById("foreigner");
+      var content = [];
+      text = "";
+      var i;
+      for (i = 0; i < x.length; i++) {
+        text += x.elements[i].value;
+      }
+      var y = document.getElementById("ptbr");
+      var content = [];
+      text2 = "";
+      var j;
+      for (j = 0; j < y.length; j++) {
+        text2 += y.elements[j].value;
+      }
+    }
+
+    const interleaver = () => {
+      atualize();
+      text = text.split('\n');
+      text2 = text2.split('\n');
+
+      let original = text.filter(text => !text.match(/\n/g));
+      let subtitle = text2.filter(text2 => !text2.match(/\n/g));
+      let bigger = Math.max(original.length, subtitle.length);
+      let first_surplus = original.length - subtitle.length
+      if (original.length != subtitle.length) {
+        alert("Original text has " + first_surplus.toString() + " more line(s) than the translation");
+      }
+      let binded = []
+      for (let i = 0; i < bigger; i++) {
+        if (original[i] !== undefined) {
+          binded.push(original[i]);
+        }
+        if (subtitle[i] !== undefined) {
+          binded.push(subtitle[i]);
+        }
+      }
+      var node = document.createTextNode(binded.join('\u000a'));
+      document.getElementById("output").appendChild(node);
+
+      console.log(bigger);
+      console.log(binded.join('\u000a'));
+
+    }
+    /* let selObj = window.getSelection();
+    let selectedText = selObj.toString();
+    console.log(selObj); */
+    /* document.getElementById("change_color").onclick = tager('red'); */
+    function tager(color) {
+      console.log('at least trigged');
+
+      // Get Selection
+      sel = window.getSelection();
+      if (sel.rangeCount && sel.getRangeAt) {
+        range = sel.getRangeAt(0);
+      }
+      // Set design mode to on
+      document.designMode = "on";
+      if (range) {
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+      // Colorize text
+      document.execCommand("ForeColor", false, color);
+      // Set design mode to off
+      document.designMode = "off";
+    }
+  </script>
+</body>
+
+</html>

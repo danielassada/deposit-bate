@@ -1,0 +1,139 @@
+
+  <!doctype html>
+   <html lang="pt-br">
+    <head>
+    <meta charset="utf-8">
+    <title>depositOFwords</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-png"/>
+
+  <link rel="stylesheet" href="dodge.css"
+    type="text/css" href="img/logo.png">
+<script type="text/javascript" src="main.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="main.js"></script>
+  <script>
+
+      function myFunction() {
+    alert('js');
+     var x = document.getElementById("lol");
+     var text = "";
+     var i;
+     for (i = 0; i < x.length ;i++) {
+         text += x.elements[i].value;
+     }
+     var n = text.search(/ en/g);
+     var play1 = text.substring(n, 0);//player1
+     var m = n+16;//linha 1
+     var top = text.slice(m);
+     var l =  top.search(/ en/g);
+     var res = top.substring(l,0);//player2
+     var k = l+m+16;//linha 2
+     var mid = text.slice(k);
+     var j = mid.search(/ en/g);
+     var rest = mid.substring(j,0);//player3
+     var i = k+j+16;//linha 3
+     var adc = text.slice(i);
+     var h = adc.search(/ en/g);
+     var resto = adc.substring(h,0);//player4
+     var g = i+h+16;
+     var top = text.slice(g);
+     var f = top.search(/ en/g);
+     var restof = top.substring(f,0)//player5
+     var str = "p1";var ste= "p2";var stw= "p3";var stq= "p4";var sty="p5"
+     var resulta = str.link("http://www.leagueofgraphs.com/pt/search/"+play1);
+     document.getElementById("demo").innerHTML = resulta;
+     var resultb = ste.link("http://www.leagueofgraphs.com/pt/search/"+res);
+     document.getElementById("play").innerHTML = resultb;
+     var resultc = stw.link("http://www.leagueofgraphs.com/pt/search/"+rest);
+     document.getElementById("mid").innerHTML = resultc;
+     var resultd = stq.link("http://www.leagueofgraphs.com/pt/search/"+resto);
+     document.getElementById("adc").innerHTML = resultd;
+     var resulte = sty.link("http://www.leagueofgraphs.com/pt/search/"+restof);
+     document.getElementById("top").innerHTML = resulte;
+
+  /*  document.getElementById("demo").innerHTML = play1;
+    document.getElementById("play").innerHTML = res;
+    document.getElementById("mid").innerHTML = rest;
+    document.getElementById("adc").innerHTML = resto;
+    document.getElementById("top").innerHTML = restof;*/
+ }
+
+</script>
+   </head>
+<body>
+
+
+<a href="catalogo.html">
+ <div id="dois" class="btn"
+  ><h2>catalogo
+</h2>
+ </div></a>
+<a href="index.html">
+ <div id="tres" class="btn"
+  ><h2>menu
+</h2>
+ </div></a>
+<div id="wrapper">
+    <h1>titulo</h1>
+
+
+
+    </div>
+
+    <div id="form">
+
+        <div id="text-header">text-header-action-button-demo-play-mid-adc-top
+           cole abaixo
+            <div class="shadow"></div>
+        </div>
+
+        <div id="text-block">
+        <form action="" id="lol">
+            <textarea class="form-control" rows="10" cols="91" id="comment"></textarea>
+            </form>
+        </div>
+
+        <div id="text-footer">
+            <div id="buttons">
+                <div id="start-button" onclick="myFunction()">
+                    <div class="action-button">pronto</div>
+                    <div id="start-button-progress" style="display: none;"></div>
+                </div>
+                <div id="clear-button">
+                    <div class="action-button">limpar</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="boto">
+<p id="demo">play1</p>   <p id="play">play2</p> <p id="mid">play3</p> <p id="adc">play4</p> <p id="top">play5</p>
+  <div id="start-button" onclick="alamm()">Click Here</a>
+</div>
+</div>
+
+
+
+
+
+
+
+  </td>
+    </tr>
+
+
+
+</table>
+</div>
+
+
+
+
+
+  </footer>
+</body>
+</html>

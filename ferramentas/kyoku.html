@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ferramenta kyokuSQL</title>
+
+<style type="text/css">
+	.central{
+		background-color: #fee;
+	}
+	.form-control{
+		overflow: hidden ;
+	}
+	.blue{
+		background-color: #9A8AeD ;
+		width: 75px;
+		height:40px;
+	}
+	#conteiner{
+
+	}
+</style>	
+</head>
+<body>
+
+<div class="central">
+	<form action="" id="kanji">
+			Id:<input type="input" name="id"><br>
+        	Katagana:<input type="input" name="kt1"><input type="input" name="kt2"><input type="input" name="kt3"><input type="input" name="kt4">
+        	<br>
+        	Hiragana:<input type="input" name="hg1"><input type="input" name="hg2"><input type="input" name="hg3"><input type="input" name="hg4"><br>
+            Pt:<textarea class="form-control" rows="3" cols="97" id="comment" name="pt"></textarea><br>
+            Uso:<textarea class="form-control" rows="2" cols="97" id="comment" name="uso1"></textarea>
+            Uso:<textarea class="form-control" rows="2" cols="97" id="comment" name="uso2"></textarea>
+            Uso:<textarea class="form-control" rows="2" cols="97" id="comment" name="uso3"></textarea>
+            <div class="blue" onclick="build()">Build</div>
+    </form>
+</div>
+<div id="conteiner"></div>
+
+<script type="text/javascript">
+	function build(){
+    	var a = document.forms["kanji"]["id"].value;
+
+        var b = document.forms["kanji"]["kt1"].value;
+        var c = document.forms["kanji"]["kt2"].value;
+        var d = document.forms["kanji"]["kt3"].value;
+        var e = document.forms["kanji"]["kt4"].value;
+
+        var f = document.forms["kanji"]["hg1"].value;
+        var g = document.forms["kanji"]["hg2"].value;
+        var h = document.forms["kanji"]["hg3"].value;
+        var i = document.forms["kanji"]["hg4"].value;
+        
+        var j = document.forms["kanji"]["pt"].value;
+
+        var k = document.forms["kanji"]["uso1"].value;
+        var l = document.forms["kanji"]["uso2"].value;
+        var m = document.forms["kanji"]["uso3"].value;
+
+        // Excluir nulos
+        var katakana ='';
+        var hiragana ='';
+
+        katanasNNulos = (a,b,c,d) => {
+        	if (a.length > 0 ) { aF = ' <i class=\\"katakana\\">'+ a + '</i> '; }
+        	if (b.length > 0 ) { bF = ' <i class=\\"katakana\\">'+ b + '</i> '; }	
+        	if (c.length > 0 ) { cF = ' <i class=\\"katakana\\">'+ c + '</i> '; }	
+			if (d.length > 0 ) { dF = ' <i class=\\"katakana\\">'+ d + '</i> '; }      
+			
+			if (typeof aF !== 'undefined') { katakana +=aF }
+			if (typeof bF !== 'undefined') { katakana +=bF }
+			if (typeof cF !== 'undefined') { katakana +=cF }
+			if (typeof dF !== 'undefined') { katakana +=dF }
+        }
+    	katanasNNulos(b,c,d,e);
+
+    	hiraganasNNulos = (a,b,c,d) => {
+        	if (a.length > 0 ) { aF = ' <i class=\\"hiragana\\">'+ a + '</i> '; }
+        	if (b.length > 0 ) { bF = ' <i class=\\"hiragana\\">'+ b + '</i> '; }	
+        	if (c.length > 0 ) { cF = ' <i class=\\"hiragana\\">'+ c + '</i> '; }	
+			if (d.length > 0 ) { dF = ' <i class=\\"hiragana\\">'+ d + '</i> '; }      
+			
+			if (typeof aF !== 'undefined') { hiragana +=aF }
+			if (typeof bF !== 'undefined') { hiragana +=bF }
+			if (typeof cF !== 'undefined') { hiragana +=cF }
+			if (typeof dF !== 'undefined') { hiragana +=dF }
+        }
+    	hiraganasNNulos(f,g,h,i);
+
+
+    	// CODIGO para nomenclatura SQL
+
+        
+
+    	 var resultado = '('+ a + ', \' ' + katakana + hiragana + '\' ,' + '\'' + j + '\' ,' + '\'' + k + '\' , \'' +  '\' ,' + '\'' + l +  '\' ,' + '\'' + m + '\' ),' ;
+
+
+
+	document.getElementById( "conteiner" ).textContent= resultado;
+    
+    // alert(skt1);//
+	}
+</script>
+</body>
+</html>

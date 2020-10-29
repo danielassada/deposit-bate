@@ -1,8 +1,8 @@
 body {
 	/*font-family: 'Oxygen', Arial, sans-serif;
 	font-family:'Droid Serif',Times,'Times New Roman',serif;*/
-	-webkit-font-smoothing: antialiased;
-	border: 0;
+	font-family:Bitter,Arial, sans-serif;
+	font-size: 100%;
 	background: #CCC;
 	background: -webkit-linear-gradient(top, #BBB, #DDD);
 	background: -o-linear-gradient(bottom, #BBB, #DDD);
@@ -10,11 +10,11 @@ body {
 	background: linear-gradient(to bottom, #BBB, #DDD);
 	background-attachment:fixed;
 	color: #000;
-	font-family:Bitter,Arial, sans-serif;
-	font-size: 100%;
-	margin: 0;
+	-webkit-font-smoothing: antialiased;
 	word-wrap: break-word;
 	word-break: break-word;
+	margin: 0;
+	border: 0;
 }
 
  

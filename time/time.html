@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<style type="text/css">
+body{background-color: #000;}
+#endf{
+    font-size: 75px;
+    color:#fff;
+    color: #49e;
+}   
+#endf2{
+    font-size: 75px;
+    color:#fff;
+    color: #49e;
+}   
+div, img{
+    padding: 0;
+    margin:auto;
+    max-width: 400px;
+}
+button#tamaru {
+    font-size: 40px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>    
+</head>
+<body>
+    <div id="follow_Date">
+        <p id="endf">loading...</p>
+        <p id="endf2">loading...</p>
+    </div>
+    <button id="tamaru">stop</button>
+<script type="text/javascript">
+    
+var date;
+var ws;
+var x;
+document.getElementById('endf').addEventListener('click',function(){
+	ws = new Date();
+	console.log(ws);
+	x = setInterval(function(){ cronometro() }, 1000);
+});
+document.getElementById('tamaru').addEventListener('click',function(){
+	 clearInterval(x);
+	 console.log('ws');
+});
+const cronometro = () =>{
+	date = new Date();
+    let duration = date - ws;
+
+     let milliseconds = parseInt((duration%1000)/100)
+            , seconds = parseInt((duration/1000)%60)
+            , minutes = parseInt((duration/(1000*60))%60)
+            , hours = parseInt((duration/(1000*60*60))%24)
+            , days = parseInt(duration/(1000*60*60*24));
+
+        days = (days < 10) ? "0" + days : days;
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    let someFormattedDate = /*days+" Days / - "+*/ hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+    document.getElementById('endf').innerHTML = someFormattedDate;
+    document.getElementById('endf2').innerHTML = duration;
+	
+}	
+</script>
+</body>
+</html>
+
+
+

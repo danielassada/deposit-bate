@@ -1,12 +1,11 @@
 *{
    
-   font-family: bitter,helvetica,sans-serif;}
+   font: helvetica,sans-serif;}
 body{
    background-position: fixed;
 margin: 0;
 padding: 50px;
-background-color: #E6E6FA;
-background-image: url("../img/background-f.jpg");
+
 }
 
 h2{}
@@ -31,7 +30,6 @@ padding-bottom: white;
 margin: 30px 30px;
 border: 1.5px solid black;
 border-radius: 5px;
-background-color: #fff;
 }
 body a:hover{
    color: #777;
@@ -40,6 +38,7 @@ body a:hover{
 
 ul{}
 title{
+   font-family: arial;
    font-size: 30px;
    color:black;
 }
@@ -87,18 +86,18 @@ display: inline-table;
   background-color: red;
 }
 #yellow{
-  float:right;
-   width: 750px;
-   text-align:right;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 810px;
+width: 175px;
+ text-align:left;
 text-decoration: none;
 color: #000 ;
 display: inline-block;
 padding: 15px 20px;
-margin: 30px 30px;
-border: 10px solid #6A5ACD;
+border: 10px solid #7D26CD;
 border-radius: 5px;
-background-color:#B0C4DE;
-background-image: url(../img/animes.jpg);
+background-color:#fff;
 }
 #yellow: hover{
     background-color: #BC8F8F;
@@ -108,14 +107,14 @@ background-image: url(../img/animes.jpg);
 #yellow a {
    text-align:right;
 text-decoration: none;
-color: #000;
+color: #7F7FFF;
 display: inline-block;
 padding: 15px 20px;
 padding-bottom: white;
 margin: 30px 30px;
 border: 1.5px solid black;
 border-radius: 5px;
-background-color:#fff;
+background-color:#808000;
 }
 #blue{
    float:right;
@@ -126,9 +125,9 @@ color: #191970 ;
 display: inline-block;
 padding: 15px 20px;
 margin: 30px 30px;
-border: 10px solid #6A5ACD;
+border: 10px solid #191970;
 border-radius: 5px;
-background-color:#B0C4DE;
+background-color:#556B2F;
 background-image: url(../img/animes.jpg);
 }
 #blue:hover{
@@ -147,9 +146,9 @@ color: #8b008b ;
 display: inline-block;
 padding: 15px 20px;
 margin: 30px 30px;
-border: 10px solid #6A5ACD;
+border: 10px solid #8b008b;
 border-radius: 5px;
-background-color:#B0C4DE;
+background-color:#556B2F;
 background-image: url(../img/filmes.jpg);
 }
 #red:hover{
@@ -164,7 +163,6 @@ background-image: url(../img/filmes.jpg);
    margin-top:300px;
 text-shadow: 15px;
 }
-/*
 a span{
 display:block;
 padding:10px;
@@ -183,7 +181,7 @@ opacity:1;
 -moz-opacity:1;
 filter:alpha(opacity=100);
 }
-a span{    /* Espaço da mensagem que ira aparecer *//*
+a span{    /* Espaço da mensagem que ira aparecer */
 width:30px;
 margin-left: 30px;
 padding-bottom: 20px;
@@ -194,56 +192,7 @@ padding-left: 100px;
 .zero-clipboard {
     display: block;
 }
-*/
-/*.bottom-clipboard{
+
+.bottom-clipboard{
 float: bottom;
-} Popup container */
-
-.popcontent{margin-top:25px;
-margin-left: 25px;
-position: fixed; }
-/* The actual popup (appears on top) */
-.popuptext {
-    width: 250px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: fixed;
-    z-index: 1;
-    margin-left: 50px;
-    margin-top: 20%;
-}
-
-/* Popup arrow */
-.popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-#hide {
-    bottom: 125%;
-    visibility: hidden;
-    color: green;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
 }

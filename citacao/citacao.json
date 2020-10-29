@@ -1,0 +1,20 @@
+ var myArray = [
+    {
+     "cabeca": "Latin Proverb:",
+     "corpo": "Mors omni aetate communis est...",
+     "complemento": "'Death spares no one.'",
+    },
+    {
+     "cabeca": "Latin Proverb:",
+     "corpo": "Omnia cinis aequat...",
+     "complemento": "''Death all equals.''",
+    }
+
+
+// [ "<h1>Latin Proverb:</h1><br><h3>Mors omni aetate communis est...</h3><br><h3><i>'Death spares no one.''</i></h3>" ],
+// [ "<h1>Latin Proverb:</h1><br><h3>Omnia cinis aequat...</h3><h3><i>'Death all equals.'</i></h3>" ],
+// [ "<h3>Jesse: People always talk about how great technology is, how it saves all this time. But what good is saved time if nobody uses it? It just turns into more busy work.</h3><i> movie:Before Sunrise (1995)</i>" ],
+// [ "<h3>Celine:But isn’t everything we do in life a way to be loved a little more?</h3><i> movie:Before Sunrise (1995)</i>" ],
+// [ "<h3>I remember when your head caught flame It kissed your scalp and caressed your brain</h3><i> by:Lorde</i>" ],
+// ["<h3>cada obra pertence a seu tempo</h3><i> -Machado de assis: Helena</i>"]
+ ];

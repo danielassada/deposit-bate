@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("a").bind("mouseover mouseout", function(){      
+        $("p").toggle();
+    });
+
+
+    $("#btn2").click(function(){
+        $("p").toggle();
+         });
+});
+    </script>
+</head>
+<div id="yellow" >
+  <p class="popuptext">Popup text...</p>
+
+     <a id="popup" href="https://trakt.tv" >trakt</a>
+      <a href="http://www.adorocinema.com" title="adoro cinema">adoro C</a>
+      <a href="https://seriesonlinehd.org" >series</a>
+      <a href="http://megafilmesonline.net" >mega</a>
+      <a href="#" ></a>
+      <a href="http://www.filmeseseriesonline.net" title=" muitos pop-up
+      dica: usar ad-block">film series</a>
+      <a href=" http://netcine.us/tvshows" title="pouco conteudo">netcine</a>
+      <a href="http://www.filmesonlinex.net" >mega</a>
+</div>
+<!--
+<body>
+<div>
+<a href="#">sa</a>
+<p>This is a <b>bold</b> paragraph.</p>
+<p id="test2">This is another <b>bold</b> paragraph.</p>
+
+<button id="btn1">Show Old/New Text</button>
+<button id="btn2">Show Old/New HTML</button>
+</div>-->
+</body>
+</html>

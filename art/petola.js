@@ -1,0 +1,10 @@
+var c = document.getElementById( "myCanvas" );
+var petola = c.getContext( '2d' );
+petola.fillStyle = '#ffccff';
+petola.beginPath();
+petola.lineTo( 240, 90 );
+petola.ellipse( 173, 95, 85, 35, 150 * Math.PI / 175, 3.8, 2 * Math.PI );
+petola.lineTo( 85, 110 );
+petola.ellipse( 173, 95, 85, 35, 5 * Math.PI / 175, 3.5, 1.8 * Math.PI );
+petola.stroke();
+petola.fill();

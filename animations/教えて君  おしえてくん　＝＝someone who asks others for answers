@@ -1,0 +1,48 @@
+教えて君  おしえてくん　＝＝someone who asks others for answers without first researching by himself​
+
+
+
+
+
+
+
+
+
+
+
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase1,,0,0,0,template syl,{\pos(!line.left+syl.center!,!line.middle!)\an5\k!syl.start_time/10!\k$kdur}
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase1,,0,0,0,template furi,{\pos(!line.left+syl.center!,!line.middle-line.height!)\an5\k!syl.start_time/10!\k$kdur}
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase2,,0,0,0,template syl,{\pos(!line.left+syl.center!,!line.middle!)\an5\k!syl.start_time/10!\k$kdur}
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase2,,0,0,0,template furi,{\pos(!line.left+syl.center!,!line.middle-line.height!)\an5\k!syl.start_time/10!\k$kdur}
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase3,,0,0,0,template syl,{\pos(!line.left+syl.center!,!line.middle!)\an5\k!syl.start_time/10!\k$kdur}
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase3,,0,0,0,template furi,{\pos(!line.left+syl.center!,!line.middle-line.height!)\an5\k!syl.start_time/10!\k$kdur}
+Dialogue: 0,0:00:00.00,0:00:13.64,japones_trifase1,,0,0,0,,{\k79}　{\k11}教｜お{\k56}＃｜し{\k41}え{\k29}て {\k37}教｜お{\k46}＃｜し{\k38}え{\k54}て{\k42}よ{\k931} {\k0}
+Dialogue: 0,0:00:00.00,0:00:13.64,japones_trifase2,,0,0,0,,{\k68} {\k365}{\k20}そ{\k44}の{\k47}仕｜し{\k45}組｜く{\k28}み{\k38}を{\k709} {\k0}
+Dialogue: 0,0:00:00.00,0:00:13.64,japones_trifase3,,0,0,0,,{\k777}　{\k47}僕｜ぼ{\k34}＃｜く{\k29}の{\k52}中｜な{\k29}＃｜か{\k197}に{\k25}誰｜だ{\k38}＃｜れ{\k25}が{\k48}い{\k19}る{\k44}の?
+Comment: 0,0:00:00.00,0:00:00.00,japones_trifase2,,0,0,0,,壊れた 壊れたよ この世界で 君が笑う 何も見えずに
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,壊れた僕なんてさ 息を止めて
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,ほどけない もう ほどけないよ 真実さえ freeze
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,壊せる 壊せない 狂える 狂えない
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,あなたを見つけて 揺れた
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,歪んだ世界にだんだん僕は 透き通って見えなくなって
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,見つけないで 僕のことを 見つめないで
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,誰かが描いた世界の中で あなたを傷つけたくはないよ
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,覚えていて 僕のことを
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,鮮やかなまま
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,無限に広がる孤独が絡まる 無邪気に笑った記憶が刺さって
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,動けない 動けない 動けない 動けない 動けない 動けないよ
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,Unravelling the world
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,変わってしまった 変えられなかった
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,2つが絡まる 2人が滅びる
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,壊せる 壊せない 狂える 狂えない
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,あなたを汚せないよ 揺れた
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,歪んだ世界にだんだん僕は 透き通って見えなくなって
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,見つけないで 僕のことを 見つめないで
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,誰かが仕組んだ孤独な罠に 未来がほどけてしまう前に
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,思い出して 僕のことを 鮮やかなまま
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,忘れないで 忘れないで 忘れないで 忘れないで
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,変わってしまったことに paralyze
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,変えられないことだらけの paradise
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,覚えていて 僕のことを
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,教えて 教えて 僕の中に誰がいるの?
+Dialogue: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,,

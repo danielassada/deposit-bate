@@ -1,0 +1,1288 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <title>depositOFwords</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="itchi.js"></script>
+    <link rel="stylesheet" href="../../css/japones.css" type="text/css" href="img/logo.png">
+
+    <style media="screen">
+      @font-face {
+        font-family: epgyosho;
+        src: url(../Sword.ttf);
+      }
+
+      .kanji {
+        font-family: epgyosho;
+        font-size: 36px;
+      }
+
+      .blue {}
+
+      #resultado {
+        margin-left: 100px;
+      }
+
+      a {
+        color: #000;
+        font-family: epgyosho;
+        src: url(../Sword.ttf);
+      }
+
+      .inf img {
+        width: 25px;
+      }
+
+      .inf span {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        margin-left: 35px;
+        margin-top: -235px;
+        font-size: 25px;
+        background: #6A5ACD;
+        display: block;
+        color: #fff;
+        /*z-index: 2;*/
+        transform: scale(0);
+        font-family: bitter;
+        border-style: solid;
+        border-color: #000;
+        border-width: 7px;
+
+      }
+
+      .col-md-8 ul {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+      }
+
+      .actived span {
+
+        transform: scale(1) !important;
+        color: #000;
+        opacity: 1;
+      }
+
+      li {
+        max-height: 38px;
+      }
+
+      .hiragana {
+        background-color: #7dcd8a;
+        padding: 5px;
+        border-radius: 15px;
+      }
+
+      .katakana {
+        background-color: #cd7d8a;
+        padding: 5px;
+        border-radius: 15px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="nav">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://10.0.0.10">home <span class="sr-only">(abyss)</span></a></li>
+
+          <li class="dropdown"><a href="index.html">home</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="http://http://192.168.4.13/deposit/">sapphire</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="file:///D:/arquivosprogramas/internet/deposit/game/Fanaf_home/mundo1.2.html">Canvas</a></li>
+              <li role="separator" class="divider">(apenas IE)</li>
+              <br>
+              <li><a href="C:\Users\Usuario\Desktop\carrosel.html">meu computador</a></li>
+            </ul>
+
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desenvolvedor <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="https://www.similarweb.com/">similares</a></li>
+              <br>
+              <li><a href="https://www.woorank.com/pt">analise de webpag</a></li>
+              <br>
+              <li><a href="http://www.seoworkers.com/sitemap.html">mapa de pagina</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="http://www.w3schools.com/">intruções de web desen</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="http://getbootstrap.com/">bootstrap</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="pg1.html">blog</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">musicas <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <br>
+                <li><a href="youtube.html">youtube</a></li>
+                <li role="separator" class="divider"></li>
+                <br>
+                <li><a href="phard.html">play list hard</a></li>
+                <br>
+                <li><a href="pItaliana.html">italiana</a></li>
+                <br>
+                <li><a href="pRussa.html">russo</a></li>
+              </ul>
+
+            </li>
+
+        </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+
+
+
+    <div class="corpo">
+
+
+      <div class="row kanji"> <i class="hiragana">いちねんせい</i>　第一学年 (80字)</div>
+
+
+
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>一</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> -nº
+          <span>読:　　
+
+ <i class="katakana" id="x222f1">イチ</i> <i class="katakana">イツ</i> <i class="hiragana">かず</i> <i class="hiragana">はじめ</i> <i class="hiragana">ひと</i> <i class="hiragana">ひと</i>( <i class="hiragana">つ</i>)<br><br><br>   1</span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            二</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">ニ</i> <i class="katakana">ジ</i> <i class="hiragana">ふた</i>( <i class="hiragana">つ</i>)<br><br>   2 </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            三</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">サン</i> <i class="hiragana">さぶ</i> <i class="hiragana">ざぶ</i>(人名用)<br><br><br>   3 </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            四</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">シ</i> <i class="hiragana">よ</i>( <i class="hiragana">つ</i>)<br><br><br>   4 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            五</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">ゴ</i> <i class="hiragana">いつ</i>( <i class="hiragana">つ</i>)<br><br><br>   5 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            六</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">ロク</i> <i class="katakana">リク</i>   6 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            七</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">シチ</i> <i class="hiragana">なな</i>( <i class="hiragana">つ</i>)<br><br><br>   7 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            八</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">ハチ</i>   8 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            九</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">キュウ</i> <i class="katakana">ク</i> <i class="hiragana">ここの</i>( <i class="hiragana">つ</i>)<br><br><br>   9 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            十</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">ジュウ</i>   10 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            百</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">ヒャク</i> <i class="hiragana">もも</i>   Cem, 100 </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            千</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-nº
+          <span>読:　　
+
+ <i class="katakana">セン</i> <i class="hiragana">ち</i>   mil, 1.000 </span></div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            日</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+ <i class="katakana">ニチ</i> <i class="katakana">ジツ</i> <i class="hiragana">か</i> <i class="hiragana">ひ</i>   Sol　　　<br><br>  日曜日・ <i class="hiragana">にちようび</i>・Domingo </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            月</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+ <i class="katakana">ゲツ</i> <i class="katakana">ガツ</i> <i class="hiragana">つき</i><br>   Lua <br><br>     月曜日・ <i class="hiragana">げつようび</i>・Segunda Feira</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            火</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">カ</i> <i class="hiragana">ひ</i><br>   Fogo <br><br>    火曜日・ <i class="hiragana">かようび</i>・Terça Feira </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            水</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+ <i class="katakana">スイ</i> <i class="hiragana">みず</i>   Aguá <br><br>     水曜日・ <i class="hiragana">すいようび</i>・Quarta Feira </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            木</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+ <i class="katakana">モク</i> <i class="katakana">ボク</i> <i class="hiragana">き</i>   Árvore <br><br>    木曜日・ <i class="hiragana">もくようび</i>・Quinta Feira </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            金</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+ <i class="katakana">キン</i> <i class="katakana">コン</i> <i class="hiragana">かね</i><br>   Ouro, fortuna <br><br>    金曜日・ <i class="hiragana">きんようび</i>・Sexta Feira  </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            土</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">-☼
+          <span>読:　　
+
+ <i class="katakana">ト</i> <i class="katakana">ド</i> <i class="hiragana">つち</i>   Solo <br><br>     土曜日・ <i class="hiragana">どようび</i>・Sabádo  </span></div>
+      </div>
+
+
+
+
+      <!-- direções -->
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            左</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ←
+          <span>読:　　
+
+ <i class="katakana">サ</i> <i class="hiragana">ひだり</i><br>   Esquerda </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            右</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> →
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">ウ</i> <i class="katakana">ユウ</i> <i class="hiragana">みぎ</i><br>   direita</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            下</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ↓
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">カ</i> <i class="katakana">ゲ</i> <i class="hiragana">した</i> <i class="hiragana">しも</i> <i class="hiragana">もと</i><br>   Abaixo, em baixo </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            上</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ↑
+          <span>読:　　
+
+ <i class="katakana">ショウ</i> <i class="katakana">ジョウ</i> <i class="hiragana">うえ</i> <i class="hiragana">かみ</i> <i class="hiragana">のぼ</i>( <i class="hiragana">る</i>)<br><br><br>   Acima, alto </span></div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Corpo -->
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            人</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+          <span>読:　　
+
+ <i class="katakana">ジン</i> <i class="katakana">ニン</i> <i class="hiragana">ひと</i>   Pessoa </span></div>
+      </div>
+
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            耳</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ☺
+          <span>読:　　
+
+ <i class="katakana">ジ</i> <i class="hiragana">みみ</i><br>   Orelha </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            口</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ☺
+          <span>読:　　
+
+ <i class="katakana">コウ</i> <i class="katakana">ク</i> <i class="hiragana">くち</i><br>   boca </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            目</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ☺
+          <span>読:　　
+
+ <i class="katakana">ボク</i> <i class="katakana">モク</i> <i class="hiragana">め</i>   Olho </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            手</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png"> ☺
+          <span>読:　　
+
+ <i class="katakana">シュ</i> <i class="hiragana">て</i> <i class="hiragana">て</i>( <i class="hiragana">ずから</i>)<br><br><br>    Mão </span></div>
+      </div>
+
+
+
+
+
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            女</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">　♀
+          <span>読:　　
+
+ <i class="katakana">ジョ</i> <i class="katakana">ニョ</i> <i class="katakana">ニョウ</i> <i class="hiragana">おんな</i> <i class="hiragana">むすめ</i> <i class="hiragana">め</i><br>   mulher, fêmia </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            男</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">　♂
+          <span>読:　　
+ <i class="katakana">ダン</i> <i class="katakana">ナン</i> <i class="hiragana">おとこ</i>   Homem, masculino </span></div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            雨</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">ウ</i> <i class="hiragana">あま</i> <i class="hiragana">あめ</i><br>   chuva </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            円</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">エン</i> <i class="hiragana">まる</i> <i class="hiragana">まる</i>( <i class="hiragana">い</i>)<br><br><br>   redondo, moeda </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            王</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">オウ</i>   Rei, magnata </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            音</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">　♫
+          <span>読:　　
+
+<br>
+
+ <i class="katakana">オン</i> <i class="katakana">イン</i> <i class="hiragana">おと</i> <i class="hiragana">ね</i><br>   Som </span></div>
+      </div>
+
+
+
+
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            花</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+          <span>読:　　
+
+ <i class="katakana">カ</i> <i class="hiragana">はな</i><br>   Flor </span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo">
+          <li class='kanji'>
+            貝</li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+          <span>読:　　
+
+ <i class="hiragana">かい</i> <i class="katakana">バイ</i>   marisco,molusco </span></div>
+      </div>
+
+      </tr>
+      <tr valign="TOP" bgcolor="#FFFFFF">
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              学</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ガク</i> <i class="hiragana">まなぶ</i><br>   Aprender, conhecimento </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              気</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">キ</i> <i class="katakana">ケ</i>   Espírito </span></div>
+        </div>
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              休</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">キュウ</i> <i class="hiragana">やす</i>( <i class="hiragana">む</i>)<br><br><br>   Descançar </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              玉</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ギョク</i> <i class="hiragana">たま</i><br>   Bola,Jóia </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              空</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">クウ</i> <i class="hiragana">あ</i>( <i class="hiragana">く</i>)<br> <i class="hiragana">から</i> <i class="hiragana">そら</i><br>   Céu, vazio, espaço </span></div>
+        </div>
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              犬</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ケン</i> <i class="hiragana">いぬ</i><br>   Cachorro </span></div>
+        </div>
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              見</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ケン</i> <i class="hiragana">まみ</i>( <i class="hiragana">える</i>)<br> <i class="hiragana">み</i>( <i class="hiragana">える</i>)<br> <i class="hiragana">み</i>( <i class="hiragana">る</i>)<br><br><br>   Olhar, observar, revisar </span></div>
+        </div>
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              校</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">コウ</i> <i class="katakana">キョウ</i><br>   Escola </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              山</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">サン</i> <i class="katakana">セン</i> <i class="hiragana">やま</i><br>   Montanha </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              子</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">シ</i> <i class="katakana">ス</i> <i class="hiragana">こ</i><br>   Semente, criança </span></div>
+        </div>
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              糸</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">シ</i> <i class="hiragana">いと</i><br>   Fio, teia </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              字</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ジ</i> <i class="hiragana">あざ</i><br>   Caracter, seção da aldeia </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              車</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">シャ</i> <i class="hiragana">くるま</i><br>   Carro, véiculo </span></div>
+        </div>
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              出</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">シュツ</i> <i class="katakana">スイ</i> <i class="hiragana">だ</i>( <i class="hiragana">す</i>)<br> <i class="hiragana">で</i>( <i class="hiragana">る</i>)<br><br><br>   Sair, saida </span></div>
+        </div>
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              小</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ショウ</i> <i class="hiragana">お</i> <i class="hiragana">こ</i> <i class="hiragana">ちい</i>( <i class="hiragana">さい</i>)<br><br><br>   Pequeno </span></div>
+        </div>
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              森</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">シン</i> <i class="hiragana">もり</i><br>   Floresta, vale </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              正</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セイ</i> <i class="katakana">ショウ</i> <i class="hiragana">ただ</i>( <i class="hiragana">しい</i>)<br> <i class="hiragana">ただ</i>( <i class="hiragana">す</i>)<br> <i class="hiragana">まさ</i>   Verdade, exato, positivo, origem </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              生</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セイ</i> <i class="katakana">ショウ</i> <i class="hiragana">いく</i>(人名用)<br><br>   Vida, vivo </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              青</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セイ</i> <i class="katakana">ショウ</i> <i class="hiragana">あお</i> <i class="hiragana">あお</i>( <i class="hiragana">い</i>)<br><br>   Azul, verde </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              夕</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セキ</i> <i class="hiragana">ゆう</i> <i class="hiragana">ゆう</i>( <i class="hiragana">べ</i>)<br><br>   Noite </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              石</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セキ</i> <i class="katakana">コク</i> <i class="katakana">シャク</i> <i class="hiragana">いし</i>   Pedra </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              赤</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セキ</i> <i class="katakana">シャク</i> <i class="hiragana">あか</i> <i class="hiragana">あか</i>( <i class="hiragana">い</i>)<br><br>   Vermelho </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              川</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セン</i> <i class="hiragana">かわ</i>   Rio </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              先</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">セン</i> <i class="hiragana">さき</i> <i class="hiragana">さき</i>( <i class="hiragana">んじる</i>)<br> <i class="hiragana">ま</i>( <i class="hiragana">ず</i>)<br><br>   Antes, proximo </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              早</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ソウ</i> <i class="hiragana">さ</i> <i class="hiragana">はや</i> <i class="hiragana">はや</i>( <i class="hiragana">い</i>)<br><br>   Agora, cedo </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              草</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ソウ</i> <i class="hiragana">くさ</i>   Grama </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              足</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ソク</i> <i class="hiragana">あし</i> <i class="hiragana">た</i>( <i class="hiragana">す</i>)<br> <i class="hiragana">た</i>( <i class="hiragana">りる</i>)<br><br>   Pé, perna </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              村</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ソン</i> <i class="hiragana">むら</i>   Vila </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              大</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">タイ</i> <i class="katakana">ダイ</i> <i class="hiragana">おお</i>( <i class="hiragana">いに</i>)<br> <i class="hiragana">おお</i>( <i class="hiragana">きい</i>)<br><br>   Grande, largo </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              竹</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">チク</i> <i class="hiragana">たけ</i>   Bambu </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              中</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">チュウ</i> <i class="hiragana">あた</i>( <i class="hiragana">る</i>)<br> <i class="hiragana">うち</i> <i class="hiragana">なか</i>   Dentro, interno, China </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              虫</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">チュウ</i> <i class="hiragana">むし</i>   Inseto </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              町</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">チョウ</i> <i class="hiragana">まち</i>   Cidade </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              天</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">テン</i> <i class="hiragana">あめ</i>   Céu, Paraiso </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              田</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">デン</i> <i class="hiragana">た</i>   Campo de arrroz </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              入</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ニュウ</i> <i class="hiragana">い</i>( <i class="hiragana">る</i>)<br> <i class="hiragana">はい</i>( <i class="hiragana">る</i>)<br><br>   Ir, se encaminhar </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              年</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ネン</i> <i class="hiragana">とし</i> <i class="hiragana">みのる</i>   Ano </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              白</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ハク</i> <i class="katakana">ビャク</i> <i class="hiragana">しろ</i> <i class="hiragana">しろ</i>( <i class="hiragana">い</i>)<br><br>   Branco </span></div>
+        </div>
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              文</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ブン</i> <i class="katakana">モン</i> <i class="hiragana">あや</i> <i class="hiragana">ふみ</i>   Escrituras, cartas </span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              本</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ホン</i> <i class="hiragana">もと</i>   Livro,origem, base, Japão </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              名</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">ミョウ</i> <i class="katakana">メイ</i> <i class="hiragana">な</i> <i class="hiragana">な</i>( <i class="hiragana">のる</i>)<br><br>   Nome, honra </span></div>
+        </div>
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              立</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">リツ</i> <i class="katakana">リュウ</i> <i class="hiragana">た</i>( <i class="hiragana">つ</i>)<br> <i class="hiragana">た</i>( <i class="hiragana">てる</i>)<br> <i class="hiragana">たつ</i>   Levantar </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              力</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">リキ</i> <i class="katakana">リョク</i> <i class="hiragana">ちから</i> <i class="hiragana">りき</i>( <i class="hiragana">む</i><br><br>   Força </span></div>
+        </div>
+
+        <div class=" col-md-8">
+          <ul class="conteudo">
+            <li class='kanji'>
+              林</li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読:　　
+
+ <i class="katakana">リン</i> <i class="hiragana">はやし</i>   Bosque </span></div>
+        </div>
+
+
+
+        <div class="row kanji">
+
+          <br><br><br><br><br>
+
+
+
+        </div>
+    </div>
+
+    <style type="text/css">
+
+
+    </style>
+
+    <footer>
+      <p>
+        Olhos sujos no relógio da torre:<br> Não, o tempo não chegou de completa justiça.<br> O tempo é ainda de fezes, maus poemas, alucinações e espera.<br> O tempo pobre, o poeta pobre<br> fundem-se no mesmo impasse.<br>
+      </p>
+      <div class='meio kanji'>
+        青　字
+      </div>
+      <div class='right'>
+        Em vão me tento explicar, os muros são surdos.<br> Sob a pele das palavras há cifras e códigos.<br> O sol consola os doentes e não os renova.<br> As coisas. Que tristes são as coisas, consideradas sem ênfase.<br> Vomitar este tédio sobre a cidade.<br>
+      </div>
+    </footer>
+
+
+<script type="text/javascript">
+ 
+ $(document).ready(function(){
+
+  //  $(".hiragana").addEventListener(algumacoisa);
+
+
+
+
+
+   $( "i" ).click(function( event ) {
+    var alg = event.target.innerText ;
+    var voice = alg.toString();
+    var msg = new SpeechSynthesisUtterance();
+    var voices = window.speechSynthesis.getVoices();
+    msg.voice = voices[11]; // Note: some voices don't support altering params
+    msg.voiceURI = 'native';
+    msg.volume = 1; // 0 to 1
+    msg.rate = 0.75; // 0.1 to 1
+    msg.pitch = 0.6; //0 to 2
+    msg.text = voice;
+    msg.lang = 'jp';
+    
+    msg.onend = function(e) {
+      console.log('Finished in ' + event.elapsedTime + ' seconds.');
+    };
+    speechSynthesis.speak(msg);
+    });  
+
+    // function algumacoisa (){
+    //     this.width(500);
+    // }
+
+    // sels = document.getElementsByTagName('h1');
+    // for(i=0; i<sels.length; i++) {
+    //     sels[i].addEventListener('click', algumacoisa, false);
+    // }
+    // $(".hiragana").click(function(){
+      
+    // var text = $(".hiragana").text();
+    // this.algumacoisa = function(){
+    //   this.attr("width","500");
+    // } 
+    // this.textss = $(".hiragana").text();
+    // console.log(textss);
+    
+
+    // var msg = new SpeechSynthesisUtterance();
+    // var voices = window.speechSynthesis.getVoices();
+    // msg.voice = voices[11]; // Note: some voices don't support altering params
+    // msg.voiceURI = 'native';
+    // msg.volume = 1; // 0 to 1
+    // msg.rate = 0.75; // 0.1 to 1
+    // msg.pitch = 0.6; //0 to 2
+    // msg.text = text;
+    // msg.lang = 'jp';
+    
+    // msg.onend = function(e) {
+    //   console.log('Finished in ' + event.elapsedTime + ' seconds.');
+    // };
+    // speechSynthesis.speak(msg);
+ // });    
+ });    
+
+
+
+//     $( "body" ).click(function( event ) {
+//   $( ".hiragana" ).html( "clicked: " + event.target.nodeName );
+// });  
+
+</script>
+  </body>
+
+</html>

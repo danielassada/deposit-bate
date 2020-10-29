@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>1648   1276 h
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="estilo.css"type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+
+$(document).ready(function(){
+var api = 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=7162FD24507A00BB3B6A88E401B1BE39&steamids=76561198365442245';
+$.getJSON(api,function(data){
+console.log(data);
+for (var i = 0; i < data.champions.length;i++){
+  var id3 = data.champions[i].id;
+  var partidas = data.champions[i].stats.totalSessionsPlayed;
+  var vitorias = data.champions[i].stats.totalSessionsWon;
+var porcen = Math.round((vitorias/partidas)*100);
+  var name = tr(id3);
+  $("#text-block").prepend("ultimo jogo:<h1>" + name + "</h1><br>jogos R: " + partidas + "   Vitorias:"+vitorias+"<br><h3>"+porcen+"%</h3>");
+console.log(id3);
+}
+
+ });
+});
+    </script>
+  </head>
+  <body>
+<div id = "data">
+  <h4>You are here:</h4>
+</div>
+<div id="form">
+
+    <div id="text-block">
+    waiting API
+    </div>
+    <div id="text-block-2">
+    waiting API
+    </div>
+
+</div>
+  </body>
+</html>

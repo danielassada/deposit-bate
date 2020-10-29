@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clipboard</title>
+</head>
+<body>
+    <form action="" style="display: table-caption;">
+        <textarea name="text" id="text" cols="150" rows="20"></textarea>
+        <input type="button" value="make buttons" style="margin: auto;display: block;" onclick="makeButtons()">
+    </form>
+    <script>
+        var x;
+        makeButtons = () => {
+            x = document.getElementById("text");
+            console.log(typeof x.value);
+            var regex = /(別|\n)/g;
+            let arrayText = x.value.toString().split(regex);
+            
+           console.log(arrayText);
+           
+
+            for (let index = 0; index < arrayText.length; index++) {
+                const element = arrayText[index];
+                if (element.charCodeAt(0) < 200 && element.charCodeAt(0) > 20) {
+                    console.log(element);
+                    console.log(element.charCodeAt(0));
+
+                    const el = document.createElement('textarea');
+                    el.setAttribute( 'id', 'textArea'+index );
+                    el.value = element;
+                    document.body.appendChild(el);
+                    
+                    const btn = document.createElement('button');
+                    btn.setAttribute( 'id', 'button'+index );
+                    btn.value = index;
+                    btn.onclick = function() {
+                        let copyText = document.getElementById('textArea'+index);
+                        copyText.select();
+                        document.execCommand("copy");
+                    }
+                    btn.innerHTML = "<-copy-" +index;
+                    document.body.appendChild(btn);
+/*  let copyText = 'xxx';
+copyText.select();
+document.execCommand("copy"); */
+                } else {
+                    //console.log("other- " + element.charCodeAt(0));
+                    
+                }
+                
+            }
+            
+        }  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+  background-color: #333;
+}
+.circular {
+  font: 26px bitter, MonoSpace;
+  position: absolute;
+  color: #6A5ACD;
+  z-index: 3;
+
+}
+
+.circular span {
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+}
+
+.circular-top span {
+  height: 200px;
+  transform-origin: bottom center;
+}
+
+.circular-bottom span {
+  padding-top: 180px;
+  transform-origin: top center;
+}
+.container{
+  top: 200px;
+  left:300px;
+  position: absolute;
+}
+.container2{
+  top: 200px;
+  left:300px;
+  position: absolute;
+}
+.dr{
+  width: 250px;
+  position: absolute;
+  top: -10px;
+  left: 90px;
+}
+.hide{
+  display: none;
+}
+#center{
+  position: absolute;
+  top:  290px;
+  left: 490px;
+  width:  50px;
+  height: 50px;
+  z-index: 1;
+  /*background-color: #000;*/
+}

@@ -1,0 +1,2929 @@
+<!doctype html>
+<html lang="pt-br">
+  <!-- 一  丨 丶 丿 乙-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>depositOFwords</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="kanji_1.js"></script>
+    <link rel="stylesheet" href="../css/estilo3.css" type="text/css" href="img/logo.png">
+
+    <style media="screen">
+      @font-face {
+        font-family: Bitter;
+        src: url(font/regular.otf);
+      }
+
+      * {
+        font-family: bitter, arial;
+        /*<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"*/
+      }
+
+      header {}
+
+      header:hover {}
+
+      body {
+        margin: 0px;
+        background-color: #D3D3D3;
+        /*light gray*/
+      }
+
+      footer {
+        margin: 20px;
+        padding: 20px;
+        height: 60px;
+        width: 100%;
+        bottom: 0px;
+        position: absolute;
+      }
+
+
+
+
+      a {}
+
+      dd {
+        font-size: 40px;
+        color: green;
+        text-align: right;
+      }
+
+      dt {}
+
+      ol {
+        display: block;
+        list-style-type: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+        color: #2c3e50;
+      }
+
+
+      h2 {
+        font-family: bitten, arial;
+        font-size: 35px;
+        color: #2c3e50;
+      }
+
+
+
+      #nav ul li:hover {
+        background-color: #D3D3D3;
+      }
+
+      ul li {
+        display: inline-block;
+      }
+
+      ul li:hover {
+        background-color: #D3D3D3;
+      }
+
+      ul li:hover ul {
+        display: block;
+      }
+
+      ul li ul {
+        position: absolute;
+        width: 200px;
+        display: none;
+      }
+
+       :after,
+       :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      * {}
+
+      ul li ul li {
+        transition: .5s
+      }
+
+      ul li ul li:hover {
+        animation-name: btn1;
+        animation-delay: .5s;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+      }
+
+      ul ul,
+      ol ul {
+        list-style-type: none;
+      }
+
+      ul li ul li {
+        background: white;
+        display: block;
+      }
+      /*inside|outside|initial*/
+
+      ul li ul li a {
+        display: block !important;
+      }
+
+      ul li ul li:hover {
+        background: #666;
+      }
+
+      td.itemcontent {
+        background-color: #fff;
+        padding: 0 15px 15px;
+        width: 350px;
+        box-shadow: 0 2px 8px #888888;
+      }
+      /*primeiro =defeito*/
+
+      #primeiro {
+        margin-left: 890px;
+        width: 25%;
+        background-color: green;
+        top: 100px;
+        border-radius: 25px;
+        position: fixed;
+      }
+
+      #primeiro h2 {
+        color: black;
+      }
+
+      #audio {
+
+        border-radius: 25px;
+      }
+
+      a:-webkit-any-link {
+        color: -webkit-link;
+        text-decoration: none;
+        cursor: auto;
+      }
+
+      #dois {
+        margin-left: 75%;
+        height: 75px;
+        width: 25%;
+        background-color: #6A5ACD;
+        top: 250px;
+        border-radius: 25px;
+        position: fixed;
+        align-content: center;
+      }
+
+      #dois h2 {
+        color: black;
+        text-align: center;
+      }
+
+      #tres {
+        margin-left: 75%;
+        height: 75px;
+        width: 25%;
+        background-color: #6A5ACD;
+        top: 350px;
+        border-radius: 25px;
+        position: fixed;
+      }
+
+      #tres h2 {
+        color: black;
+        text-align: center;
+      }
+
+      #quatro {
+        margin-left: 75%;
+        height: 75px;
+        width: 25%;
+        background-color: #6A5ACD;
+        top: 475px;
+        border-radius: 25px;
+        position: fixed;
+      }
+
+      #quatro h2 {
+        color: black;
+        text-align: center;
+      }
+
+
+      @keyframes btn {
+        0% {
+          transform: rotateX(0);
+        }
+        50% {
+          transform: rotateX(180deg);
+        }
+        100% {
+          transform: rotateX(0);
+        }
+      }
+
+      .btn {
+        transition: .5s
+      }
+
+      .btn:hover {
+        animation-name: btn;
+        animation-delay: .5s;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        background-image: url(saf.jpg);
+      }
+
+      #content {
+        margin-top: 75px;
+        background-color: white;
+        background-size: 500px;
+      }
+
+      tr.ic {
+        background-color: black;
+        height: 100px;
+        width: 100px;
+      }
+
+
+      #blue {
+        width: 800px;
+        height: 200px;
+        border: 3px solid black;
+        border-color: blue;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      #blue h4 {
+        text-shadow: 1px 1px black;
+        text-align: center;
+        color: #FF7833;
+      }
+
+      #color {
+        margin-left: 15px;
+        height: 75px;
+        width: 100px;
+      }
+
+      #red {
+        width: 800px;
+        height: 200px;
+        border: 3px solid black;
+        border-color: #FF0000;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      #red h4 {
+        text-shadow: 1px 1px black;
+        text-align: center;
+        color: #FF7833;
+      }
+
+      #nav {
+        background-color: #6A5ACD;
+        align-items: stretch;
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        position: relative;
+        margin: 0;
+        z-index: 100;
+        text-align: center;
+      }
+
+      #nav a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      #nav ul li {
+        width: 125px;
+        margin: 0;
+        right: 0;
+        color: #000;
+        font-style: normal;
+        background-color: #6A5ACD;
+        padding: 25px;
+        z-index: 1;
+        border-right: 3px solid #000;
+        display: block;
+        list-style-type: none;
+        float: left;
+      }
+
+      #car {
+        position: absolute;
+        margin-top: 250px;
+        z-index: 0;
+      }
+
+      #footer {
+        bottom: 0;
+        margin-top: 1800px;
+        position: absolute;
+        width: 100%;
+      }
+
+      #hide {
+        margin-bottom: -999px;
+        display: hidden;
+        color: #D3D3D3;
+      }
+
+      .popcontent {
+        margin-top: 25px;
+        margin-left: 25px;
+        position: fixed;
+      }
+      /* The actual popup (appears on top) */
+
+      .popuptext {
+        min-width: 250px;
+        max-width: 850px;
+        background-color: #6A5ACD;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: fixed;
+        z-index: 1;
+        margin-left: 10%;
+        margin-top: -5%;
+        z-index: 999;
+      }
+      /* Popup arrow */
+
+      .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #6A5ACD transparent transparent transparent;
+      }
+
+      li {
+        font-size: 16px;
+        list-style: none;
+      }
+
+      body {
+        background-color: #a1a1a1;
+      }
+
+      .col-md-7 {
+        background-color: #fff;
+        float: left;
+        width: 12%;
+        position: static;
+        margin-left: 2px;
+        margin-top: 2px;
+      }
+
+      .corpo {
+        margin-top: 100px;
+        width: 800px;
+      }
+
+      .row {
+        width: 800px;
+        min-height: 20px;
+        padding: 5px;
+        display: inline-block;
+        margin-left: 2px;
+        margin-top: 2px;
+        background-color: #fff;
+      }
+
+      .conteudo {
+        padding: 3px;
+      }
+
+      .kanji {
+        font-size: 36px;
+      }
+
+      .red {
+        background-color: #d84444;
+      }
+
+      .orange {
+        background-color: #fbb;
+      }
+
+      .blue {
+        background-color: #4444d8;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="nav">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://10.0.0.10">home <span class="sr-only">(abyss)</span></a></li>
+
+          <li class="dropdown"><a href="index.html">home</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="http://http://192.168.4.13/deposit/">sapphire</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="file:///D:/arquivosprogramas/internet/deposit/game/Fanaf_home/mundo1.2.html">Canvas</a></li>
+              <li role="separator" class="divider">(apenas IE)</li>
+              <br>
+              <li><a href="C:\Users\Usuario\Desktop\carrosel.html">meu computador</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desenvolvedor <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="https://www.similarweb.com/">similares</a></li>
+              <br>
+              <li><a href="https://www.woorank.com/pt">analise de webpag</a></li>
+              <br>
+              <li><a href="http://www.seoworkers.com/sitemap.html">mapa de pagina</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="http://www.w3schools.com/">intruções de web desen</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="http://getbootstrap.com/">bootstrap</a></li>
+            </ul>
+          </li>
+
+          <li><a href="pg1.html">blog</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">musicas <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <br>
+                <li><a href="youtube.html">youtube</a></li>
+                <li role="separator" class="divider"></li>
+                <br>
+                <li><a href="phard.html">play list hard</a></li>
+                <br>
+                <li><a href="pItaliana.html">italiana</a></li>
+                <br>
+                <li><a href="pRussa.html">russo</a></li>
+              </ul>
+            </li>
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+
+    <div class="popupcontent">
+      <p class="popuptext">
+    </div>
+
+
+
+    <div id="dois" class="btn"><a href="pg1.html"><h2>Blog
+</h2></a>
+      <script type="text/javascript">
+        $(document)
+          .ready(function() {
+            $("#quatro")
+              .click(function() {
+                $(".red").show();
+              });
+            $("#tres")
+              .click(function() {
+                $(".red").hide();
+              });
+          });
+
+      </script>
+    </div>
+    <div id="tres" class="btn">
+      <h2>esconder</h2>
+    </div>
+    <div id="quatro" class="btn">
+      <h2>mostrar</h2>
+    </div>
+
+
+    <div class="corpo">
+
+
+      <div class="row">
+        <div class=" col-md-7">unicode 4e00</div>
+        <div class=" col-md-7">unicode 4e01</div>
+        <div class=" col-md-7 red">unicode 4e02</div>
+        <div class=" col-md-7">unicode 4e03</div>
+        <div class=" col-md-7 red">unicode 4e04</div>
+        <div class=" col-md-7 red">unicode 4e05</div>
+        <div class=" col-md-7 red">unicode 4e06</div>
+        <div class=" col-md-7">unicode 4e07</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo blue"><br>
+            <li id="itchi" class="kanji">一</li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="kou" class="kanji">丁
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">丂
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="nana" class="kanji">七
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">丄
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">丅
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">丆
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="man" class="kanji">万
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e08</div>
+        <div class=" col-md-7">unicode 4e09</div>
+        <div class=" col-md-7">unicode 4e0a</div>
+        <div class=" col-md-7">unicode 4e0b</div>
+        <div class=" col-md-7 red">unicode 4e0c</div>
+        <div class=" col-md-7">unicode 4e0d</div>
+        <div class=" col-md-7">unicode 4e0e</div>
+        <div class=" col-md-7 red">unicode 4e0f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="take" class="kanji">
+              丈
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="san" class="kanji">
+              三
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul id="zyou" class="conteudo"><br>
+            <li class="kanji">
+              上
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="shita" class="kanji">
+              下
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丌
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="fu" class="kanji">
+              不
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="atae" class="kanji">
+              与
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丏
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e10</div>
+        <div class=" col-md-7">unicode 4e11</div>
+        <div class=" col-md-7 red">unicode 4e12</div>
+        <div class=" col-md-7 red">unicode 4e13</div>
+        <div class=" col-md-7">unicode 4e14</div>
+        <div class=" col-md-7 red">unicode 4e15</div>
+        <div class=" col-md-7">unicode 4e16</div>
+        <div class=" col-md-7">unicode 4e17</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丐
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo orange"><br>
+            <li id="ushi" class="kanji">
+              丑
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丒
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              专
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="katsu" class="kanji">
+              且
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丕
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="zee" class="kanji">
+              世
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="zeee" class="kanji">
+              丗
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e18</div>
+        <div class=" col-md-7">unicode 4e19</div>
+        <div class=" col-md-7 red">unicode 4e1a</div>
+        <div class=" col-md-7 red">unicode 4e1b</div>
+        <div class=" col-md-7 red">unicode 4e1c</div>
+        <div class=" col-md-7 red">unicode 4e1d</div>
+        <div class=" col-md-7">unicode 4e1e</div>
+        <div class=" col-md-7">unicode 4e1f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="oka" class="kanji">
+              丘
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="hei" class="kanji">
+              丙
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              业
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丛
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li id="chines1" class="kanji">
+              东
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li id="chines2" class="kanji">
+              丝
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="sukuu" class="kanji">
+              丞
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丟
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e20</div>
+        <div class=" col-md-7">unicode 4e21</div>
+        <div class=" col-md-7 red">unicode 4e22</div>
+        <div class=" col-md-7 red">unicode 4e23</div>
+        <div class=" col-md-7 red">unicode 4e24</div>
+        <div class=" col-md-7 red">unicode 4e25</div>
+        <div class=" col-md-7">unicode 4e26</div>
+        <div class=" col-md-7 red">unicode 4e27</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丠
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="ryo" class="kanji">
+              両
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丢
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丣
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              两
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              严
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="nara" class="kanji">
+              並
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丧
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script src="../js/kanji_2_bou.js"></script>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e28</div>
+        <div class=" col-md-7 red">unicode 4e29</div>
+        <div class=" col-md-7 red">unicode 4e2a</div>
+        <div class=" col-md-7 red">unicode 4e2b</div>
+        <div class=" col-md-7 red">unicode 4e2c</div>
+        <div class=" col-md-7">unicode 4e2d</div>
+        <div class=" col-md-7 red">unicode 4e2e</div>
+        <div class=" col-md-7 red">unicode 4e2f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo blue"><br>
+            <li id="bou" class="kanji">
+              丨
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丩
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              个
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丫
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丬
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="naka" class="kanji">
+              中
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丮
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丯
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e30</div>
+        <div class=" col-md-7 red">unicode 4e31</div>
+        <div class=" col-md-7">unicode 4e32</div>
+        <div class=" col-md-7 red">unicode 4e33</div>
+        <div class=" col-md-7 red">unicode 4e34</div>
+        <div class=" col-md-7 red">unicode 4e35</div>
+        <div class=" col-md-7">unicode 4e36</div>
+        <div class=" col-md-7 red">unicode 4e37</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丰
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丱
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo orange"><br>
+            <li id="kushi" class="kanji">
+              串
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丳
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              临
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丵
+            </li>
+          </ul>
+        </div>
+        <script src="../js/kanji_3_ten.js"></script>
+        <div class=" col-md-7">
+          <ul class="conteudo blue"><br>
+            <li id="ten" class="kanji">
+              丶
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丷
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e38</div>
+        <div class=" col-md-7">unicode 4e39</div>
+        <div class=" col-md-7 red">unicode 4e3a</div>
+        <div class=" col-md-7">unicode 4e3b</div>
+        <div class=" col-md-7">unicode 4e3c</div>
+        <div class=" col-md-7 red">unicode 4e3d</div>
+        <div class=" col-md-7 red">unicode 4e3e</div>
+        <div class=" col-md-7">unicode 4e3f</div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <ul class="conteudo"><br>
+            <li id="maru" class="kanji">
+              丸
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li id="tan" class="kanji">
+              丹
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              为
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-7">
+          <ul class="conteudo"><br>
+            <li id="omo" class="kanji">
+              主
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo orange"><br>
+            <li id="donburi" class="kanji">
+              丼
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              丽
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              举
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo blue"><br>
+            <li class="kanji">
+              丿
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e40</div>
+        <div class=" col-md-7 red">unicode 4e41</div>
+        <div class=" col-md-7 red">unicode 4e42</div>
+        <div class=" col-md-7 red">unicode 4e43</div>
+        <div class=" col-md-7 red">unicode 4e44</div>
+        <div class=" col-md-7">unicode 4e45</div>
+        <div class=" col-md-7 red">unicode 4e46</div>
+        <div class=" col-md-7 red">unicode 4e47</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乀
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乁
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乂
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乃
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乄
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              久
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乆
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乇
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e48</div>
+        <div class=" col-md-7 red">unicode 4e49</div>
+        <div class=" col-md-7 red">unicode 4e4a</div>
+        <div class=" col-md-7">unicode 4e4b</div>
+        <div class=" col-md-7 red">unicode 4e4c</div>
+        <div class=" col-md-7 red">unicode 4e4d</div>
+        <div class=" col-md-7">unicode 4e4e</div>
+        <div class=" col-md-7">unicode 4e4f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              么
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              义
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乊
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              之
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乌
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乍
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乎
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乏
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e50</div>
+        <div class=" col-md-7 red">unicode 4e51</div>
+        <div class=" col-md-7 red">unicode 4e52</div>
+        <div class=" col-md-7 red">unicode 4e53</div>
+        <div class=" col-md-7 red">unicode 4e54</div>
+        <div class=" col-md-7 red">unicode 4e55</div>
+        <div class=" col-md-7">unicode 4e56</div>
+        <div class=" col-md-7 red">unicode 4e57</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乐
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乑
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乒
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乓
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乔
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乕
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo orange"><br>
+            <li class="kanji">
+              乖
+              <!-- 乖離（かいり） / deviation, detachment, separation,
+dissociation, estrangement, alienation -->
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乗
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e58</div>
+        <div class=" col-md-7">unicode 4e59</div>
+        <div class=" col-md-7 red">unicode 4e5a</div>
+        <div class=" col-md-7 red">unicode 4e5b</div>
+        <div class=" col-md-7 red">unicode 4e5c</div>
+        <div class=" col-md-7">unicode 4e5d</div>
+        <div class=" col-md-7">unicode 4e5e</div>
+        <div class=" col-md-7">unicode 4e5f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乘
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo blue"><br>
+            <li class="kanji">
+              乙
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乚
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乛
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乜
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              九
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乞
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              也
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">unicode 4e60</div>
+        <div class=" col-md-7 red">unicode 4e61</div>
+        <div class=" col-md-7">unicode 4e62</div>
+        <div class=" col-md-7">unicode 4e63</div>
+        <div class=" col-md-7">unicode 4e64</div>
+        <div class=" col-md-7">unicode 4e65</div>
+        <div class=" col-md-7">unicode 4e66</div>
+        <div class=" col-md-7">unicode 4e67</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              习
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7 red">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乡
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乢
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乣
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乤
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乥
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              书
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乧
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e68</div>
+        <div class=" col-md-7">unicode 4e69</div>
+        <div class=" col-md-7">unicode 4e6a</div>
+        <div class=" col-md-7">unicode 4e6b</div>
+        <div class=" col-md-7">unicode 4e6c</div>
+        <div class=" col-md-7">unicode 4e6d</div>
+        <div class=" col-md-7">unicode 4e6e</div>
+        <div class=" col-md-7">unicode 4e6f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乨
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乩
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乪
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乫
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乬
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乭
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乮
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乯
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e70</div>
+        <div class=" col-md-7">unicode 4e71</div>
+        <div class=" col-md-7">unicode 4e72</div>
+        <div class=" col-md-7">unicode 4e73</div>
+        <div class=" col-md-7">unicode 4e74</div>
+        <div class=" col-md-7">unicode 4e75</div>
+        <div class=" col-md-7">unicode 4e76</div>
+        <div class=" col-md-7">unicode 4e77</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              买
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乱
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乲
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乳
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乴
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乵
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乶
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乷
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e78</div>
+        <div class=" col-md-7">unicode 4e79</div>
+        <div class=" col-md-7">unicode 4e7a</div>
+        <div class=" col-md-7">unicode 4e7b</div>
+        <div class=" col-md-7">unicode 4e7c</div>
+        <div class=" col-md-7">unicode 4e7d</div>
+        <div class=" col-md-7">unicode 4e7e</div>
+        <div class=" col-md-7">unicode 4e7f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乸
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乹
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乺
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乻
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乼
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乽
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乾
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              乿
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e80</div>
+        <div class=" col-md-7">unicode 4e81</div>
+        <div class=" col-md-7">unicode 4e82</div>
+        <div class=" col-md-7">unicode 4e83</div>
+        <div class=" col-md-7">unicode 4e84</div>
+        <div class=" col-md-7">unicode 4e85</div>
+        <div class=" col-md-7">unicode 4e86</div>
+        <div class=" col-md-7">unicode 4e87</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亀
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亁
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亂
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亃
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亄
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo blue"><br>
+            <li class="kanji">
+              亅
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              了
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亇
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e88</div>
+        <div class=" col-md-7">unicode 4e89</div>
+        <div class=" col-md-7">unicode 4e8a</div>
+        <div class=" col-md-7">unicode 4e8b</div>
+        <div class=" col-md-7">unicode 4e8c</div>
+        <div class=" col-md-7">unicode 4e8d</div>
+        <div class=" col-md-7">unicode 4e8e</div>
+        <div class=" col-md-7">unicode 4e8f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              予
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              争
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亊
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              事
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              二
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亍
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              于
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亏
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e90</div>
+        <div class=" col-md-7">unicode 4e91</div>
+        <div class=" col-md-7">unicode 4e92</div>
+        <div class=" col-md-7">unicode 4e93</div>
+        <div class=" col-md-7">unicode 4e94</div>
+        <div class=" col-md-7">unicode 4e95</div>
+        <div class=" col-md-7">unicode 4e96</div>
+        <div class=" col-md-7">unicode 4e97</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亐
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              云
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              互
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亓
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              五
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              井
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亖
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亗
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4e98</div>
+        <div class=" col-md-7">unicode 4e99</div>
+        <div class=" col-md-7">unicode 4e9a</div>
+        <div class=" col-md-7">unicode 4e9b</div>
+        <div class=" col-md-7">unicode 4e9c</div>
+        <div class=" col-md-7">unicode 4e9d</div>
+        <div class=" col-md-7">unicode 4e9e</div>
+        <div class=" col-md-7">unicode 4e9f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亘
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亙
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亚
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 些
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亜
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亝
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亞
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br> 亟
+            <li class="kanji">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ea0</div>
+        <div class=" col-md-7">unicode 4ea1</div>
+        <div class=" col-md-7">unicode 4ea2</div>
+        <div class=" col-md-7">unicode 4ea3</div>
+        <div class=" col-md-7">unicode 4ea4</div>
+        <div class=" col-md-7">unicode 4ea5</div>
+        <div class=" col-md-7">unicode 4ea6</div>
+        <div class=" col-md-7">unicode 4ea7</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亠
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亡
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亢
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亣
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              交
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亥
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亦
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              产
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ea8</div>
+        <div class=" col-md-7">unicode 4ea9</div>
+        <div class=" col-md-7">unicode 4eaa</div>
+        <div class=" col-md-7">unicode 4eab</div>
+        <div class=" col-md-7">unicode 4eac</div>
+        <div class=" col-md-7">unicode 4ead</div>
+        <div class=" col-md-7">unicode 4eae</div>
+        <div class=" col-md-7">unicode 4eaf</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亨
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亩
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亪
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              享
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              京
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亭
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亮
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亯
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4eb0</div>
+        <div class=" col-md-7">unicode 4eb1</div>
+        <div class=" col-md-7">unicode 4eb2</div>
+        <div class=" col-md-7">unicode 4eb3</div>
+        <div class=" col-md-7">unicode 4eb4</div>
+        <div class=" col-md-7">unicode 4eb5</div>
+        <div class=" col-md-7">unicode 4eb6</div>
+        <div class=" col-md-7">unicode 4eb7</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亰
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亱
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亲
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亳
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亴
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亵
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亶
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亷
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4eb8</div>
+        <div class=" col-md-7">unicode 4eb9</div>
+        <div class=" col-md-7">unicode 4eba</div>
+        <div class=" col-md-7">unicode 4ebb</div>
+        <div class=" col-md-7">unicode 4ebc</div>
+        <div class=" col-md-7">unicode 4ebd</div>
+        <div class=" col-md-7">unicode 4ebe</div>
+        <div class=" col-md-7">unicode 4ebf</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亸
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亹
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              人
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亻
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亼
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亽
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亾
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              亿
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ec0</div>
+        <div class=" col-md-7">unicode 4ec1</div>
+        <div class=" col-md-7">unicode 4ec2</div>
+        <div class=" col-md-7">unicode 4ec3</div>
+        <div class=" col-md-7">unicode 4ec4</div>
+        <div class=" col-md-7">unicode 4ec5</div>
+        <div class=" col-md-7">unicode 4ec6</div>
+        <div class=" col-md-7">unicode 4ec7</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              什
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仁
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仂
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仃
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仄
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仅
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仆
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仇
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ec8</div>
+        <div class=" col-md-7">unicode 4ec9</div>
+        <div class=" col-md-7">unicode 4eca</div>
+        <div class=" col-md-7">unicode 4ecb</div>
+        <div class=" col-md-7">unicode 4ecc</div>
+        <div class=" col-md-7">unicode 4ecd</div>
+        <div class=" col-md-7">unicode 4ece</div>
+        <div class=" col-md-7">unicode 4ecf</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仈
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仉
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              今
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              介
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仌
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仍
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              从
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仏
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ed0</div>
+        <div class=" col-md-7">unicode 4ed1</div>
+        <div class=" col-md-7">unicode 4ed2</div>
+        <div class=" col-md-7">unicode 4ed3</div>
+        <div class=" col-md-7">unicode 4ed4</div>
+        <div class=" col-md-7">unicode 4ed5</div>
+        <div class=" col-md-7">unicode 4ed6</div>
+        <div class=" col-md-7">unicode 4ed7</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仐
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仑
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仒
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仓
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仔
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仕
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              他
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仗
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ed8</div>
+        <div class=" col-md-7">unicode 4ed9</div>
+        <div class=" col-md-7">unicode 4eda</div>
+        <div class=" col-md-7">unicode 4edb</div>
+        <div class=" col-md-7">unicode 4edc</div>
+        <div class=" col-md-7">unicode 4edd</div>
+        <div class=" col-md-7">unicode 4ede</div>
+        <div class=" col-md-7">unicode 4edf</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              付
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仙
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仚
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仛
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仜
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仝
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仞
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仟
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ee0</div>
+        <div class=" col-md-7">unicode 4ee1</div>
+        <div class=" col-md-7">unicode 4ee2</div>
+        <div class=" col-md-7">unicode 4ee3</div>
+        <div class=" col-md-7">unicode 4ee4</div>
+        <div class=" col-md-7">unicode 4ee5</div>
+        <div class=" col-md-7">unicode 4ee6</div>
+        <div class=" col-md-7">unicode 4ee7</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仠
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仡
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仢
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              代
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              令
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              以
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仦
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仧
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ee8</div>
+        <div class=" col-md-7">unicode 4ee9</div>
+        <div class=" col-md-7">unicode 4eea</div>
+        <div class=" col-md-7">unicode 4eeb</div>
+        <div class=" col-md-7">unicode 4eec</div>
+        <div class=" col-md-7">unicode 4eed</div>
+        <div class=" col-md-7">unicode 4eee</div>
+        <div class=" col-md-7">unicode 4eef</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仨
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仩
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仪
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仫
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              们
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仭
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仮
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仯
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ef0</div>
+        <div class=" col-md-7">unicode 4ef1</div>
+        <div class=" col-md-7">unicode 4ef2</div>
+        <div class=" col-md-7">unicode 4ef3</div>
+        <div class=" col-md-7">unicode 4ef4</div>
+        <div class=" col-md-7">unicode 4ef5</div>
+        <div class=" col-md-7">unicode 4ef6</div>
+        <div class=" col-md-7">unicode 4ef7</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仰
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仱
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仲
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仳
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仴
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仵
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              件
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              价
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">unicode 4ef8</div>
+        <div class=" col-md-7">unicode 4ef9</div>
+        <div class=" col-md-7">unicode 4efa</div>
+        <div class=" col-md-7">unicode 4efb</div>
+        <div class=" col-md-7">unicode 4efc</div>
+        <div class=" col-md-7">unicode 4efd</div>
+        <div class=" col-md-7">unicode 4efe</div>
+        <div class=" col-md-7">unicode 4eff</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仸
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仹
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仺
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              任
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仼
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              份
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仾
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              仿
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伀
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              企
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伂
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伃
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伄
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伅
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伆
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伇
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伈
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伉
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伊
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伋
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伌
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伍
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伎
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伏
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伐
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              休
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伒
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伓
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伔
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伕
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伖
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              众
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              优
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伙
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              会
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伛
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伜
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伝
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伞
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-7">
+          <ul class="conteudo"><br>
+            <li class="kanji">
+              伟
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 4f10 -->
+    </div>
+  </body>
+
+</html>

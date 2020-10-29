@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>input unico</title>
+	<script type="text/javascript" src="main.js"></script>
+	<script>
+function myFunction() {
+alert('x.res');
+    var x = document.getElementById("lol");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value; 
+    var n = text.search(/ en/g);
+    var play1 = text.substring(n, 0);
+    var m = n+16;
+    var res12 = text.slice(m);
+    //var j = rest12.search(/ en/g);
+    //var res1 = res12.substring(j,0);
+    }
+    document.getElementById("demo").innerHTML = res12;
+    document.getElementById("play").innerHTML = m;
+}
+
+
+    //var y = res.length;
+//str=(59)
+//char(21)
+//drago52 entrou na sala.
+//JDempsey entrou na sala.
+//Meu ovo poha entrou na sala.
+//caitUdoDalest entrou na sala.
+//GUMMY BEAHR entrou na sala.
+</script>
+</head>
+<body>
+<div id="form">
+
+        <div id="text-header">
+           cole abaixo
+            <div class="shadow"></div>
+        </div>
+    
+        <div id="text-block">
+        <form action="" id="lol">
+            <textarea class="form-control" rows="10" cols="104" id="comment"></textarea>
+            </form>
+        </div>
+
+        <div id="text-footer">
+            <div id="buttons">
+                <div id="start-button" onclick="myFunction()">
+                    <div class="action-button">pronto</div>
+                    <div id="start-button-progress" style="display: none;"></div>
+                </div>
+<p id="demo">demo</p><p id="play">play</p>
+<a href="http://www.leagueofgraphs.com/pt/search/"></a>
+</body>
+</html>

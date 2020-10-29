@@ -1,0 +1,2208 @@
+<!doctype html>
+<html lang="pt-br">
+  <!-- 一  丨 丶 丿 乙-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>depositOFwords</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="itchi.js"></script>
+    <link rel="stylesheet" href="../estilo.css" type="text/css" href="img/logo.png">
+
+    <style media="screen">
+      @font-face {
+        font-family: epgyosho;
+        src: url(../Sword.ttf);
+      }
+
+      .kanji {
+        font-family: epgyosho;
+        font-size: 36px;
+      }
+
+      .blue {}
+
+      #resultado {
+        margin-left: 100px;
+      }
+
+      a {
+        color: #000;
+        font-family: epgyosho;
+        src: url(../Sword.ttf);
+      }
+
+      .inf img{
+        width:25px;
+      }
+     .inf span {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        margin-left: 35px;
+        margin-top: -35px;
+        font-size: 25px;
+        background: #6A5ACD;
+        display: block;
+        color: #fff;
+        /*z-index: 2;*/
+        transform: scale(0);
+    font-family: bitter;
+    border-style: solid;
+    border-color: #000;
+    border-width: 7px;
+      }
+   .col-md-8 ul{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+      .col-md-8 div:active span {
+        transform: scale(1);
+        color: #000;
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="nav">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://10.0.0.10">home <span class="sr-only">(abyss)</span></a></li>
+
+          <li class="dropdown"><a href="index.html">home</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="http://http://192.168.4.13/deposit/">sapphire</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="file:///D:/arquivosprogramas/internet/deposit/game/Fanaf_home/mundo1.2.html">Canvas</a></li>
+              <li role="separator" class="divider">(apenas IE)</li>
+              <br>
+              <li><a href="C:\Users\Usuario\Desktop\carrosel.html">meu computador</a></li>
+            </ul>
+
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desenvolvedor <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="https://www.similarweb.com/">similares</a></li>
+              <br>
+              <li><a href="https://www.woorank.com/pt">analise de webpag</a></li>
+              <br>
+              <li><a href="http://www.seoworkers.com/sitemap.html">mapa de pagina</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="http://www.w3schools.com/">intruções de web desen</a></li>
+              <li role="separator" class="divider"></li>
+              <br>
+              <li><a href="http://getbootstrap.com/">bootstrap</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="pg1.html">blog</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">musicas <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <br>
+                <li><a href="youtube.html">youtube</a></li>
+                <li role="separator" class="divider"></li>
+                <br>
+                <li><a href="phard.html">play list hard</a></li>
+                <br>
+                <li><a href="pItaliana.html">italiana</a></li>
+                <br>
+                <li><a href="pRussa.html">russo</a></li>
+              </ul>
+
+            </li>
+
+        </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+
+    <div class="popupcontent">
+      <p class="popuptext">
+    </div>
+
+
+
+    <div id="dois" class="btn"><a href="pg1.html"><h2>Blog
+</h2></a>
+      <script type="text/javascript">
+        $(document)
+          .ready(function() {
+            $(".popuptext").hide();
+            $("#quatro")
+              .click(function() {
+                $(".red").show();
+              });
+            $("#tres")
+              .click(function() {
+                $(".red").hide();
+              });
+          });
+
+        function toHex() {
+          var x = document.getElementById("hexdecimal");
+          var content = [];
+          var text = "";
+          var i;
+          for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value;
+          }
+          for (var j = 0; j < text.length; j++) {
+            // var hex = text.charCodeAt(j).toString(16);
+            var hex = text.charCodeAt(j);
+            var node = document.createTextNode(hex + " :" + String.fromCharCode(text.charCodeAt(j)) + "    ");
+            document.getElementById("resultado")
+              .appendChild(node);
+          }
+        }
+
+        function contar() {
+          var x = document.getElementById("hexdecimal");
+          var content = [];
+          var text = "";
+          var i;
+          for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value;
+          }
+
+          var node = document.createTextNode(text.length.toString());
+          document.getElementById("resultado")
+            .appendChild(node);
+        }
+        
+        function toHexadecimal(){
+          var x = document.forms["hexdecimal"]["caa"].value;
+          
+
+          var text2 = Number(x).toString(16);
+
+          var node = document.createTextNode(text2);
+          document.getElementById("resultado").appendChild(node);
+        }
+
+        function toDecimal() {
+          var x = document.getElementById("hexdecimal");
+          var content = [];
+          var text = "";
+          var i;
+          for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value;
+          }
+
+          text = parseInt(text, 16);
+          var node = document.createTextNode(text);
+          document.getElementById("resultado")
+            .appendChild(node);
+        }
+
+        function toCaracter() {
+          var x = document.getElementById("hexdecimal");
+          var content = [];
+          var text = "";
+          var i;
+          for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value;
+          }
+
+          numero = parseInt(text, 16);
+          var node = document.createTextNode(String.fromCharCode(numero));
+          document.getElementById("resultado")
+            .appendChild(node);
+        }
+function code_html() {
+          var x = document.getElementById("hexdecimal");
+          var content = [];
+          var text = "";
+          var i;
+          for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value;
+          }
+          for (var j = 0; j < text.length; j++) {
+            var dec = text.charCodeAt(j);
+            var node = document.createTextNode('&#'+dec + ";");
+            document.getElementById("resultado")
+              .appendChild(node);
+          }
+        }
+
+      </script>
+    </div>
+    <div id="tres" class="btn">
+      <h2>esconder</h2>
+    </div>
+    <div id="quatro" class="btn">
+      <h2>mostrar</h2>
+    </div>
+
+
+    <div class="corpo">
+      <div class="row">
+        <form action="" id="hexdecimal">
+          <textarea class="form-control" rows="1" cols="71" id="comment" name="caa"></textarea>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-3 action-button blue" onclick="contar()">contar</div>
+        <div class="col-md-3 action-button blue" onclick="toHex()">hexadecimal</div>
+        <div class="col-md-3 action-button blue" onclick="toDecimal()">decimal</div>
+        <div class="col-md-3 action-button blue" onclick="toCaracter()">caracter</div>
+        <div class="col-md-3 action-button blue" onclick="code_html()">html</div>
+        <div class="col-md-3 action-button blue" onclick="toHexadecimal()">Nu to Hex</div>
+        <div id="resultado"></div>
+
+      </div>
+
+
+
+
+      <div class="row">
+        <div class=" col-md-7 kanji " onclick="kanji1()">一画</div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 ">unicode 4e00</div>
+        <div class="col-md-8 ">unicode 4e28</div>
+        <div class="col-md-8 ">unicode 4e36</div>
+        <div class="col-md-8 ">unicode 4e3f</div>
+        <div class="col-md-8 ">unicode 4e59</div>
+        <div class="col-md-8 ">unicode 4e85</div>
+      </div>
+      <div class="row" onclick="kanji1()">
+        <div class=" col-md-8 kanji">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ichi_kaku/x4e00.html'>一</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み: ・いち・<BR><BR>Um : 1</span></div>
+          
+        </div>
+        <div class=" col-md-8 kanji">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ichi_kaku/x4e28.html'>丨</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　・ぼう・たでぼう・　<br><br> Linha</span></div>
+          
+        </div>
+        <div class=" col-md-8 kanji">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ichi_kaku/x4e36.html'>丶</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　・てん・<br><br> Ponto</span></div>
+          
+        </div>
+        <div class=" col-md-8 kanji">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ichi_kaku/x4e3f.html'>丿</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・の・のかんむり・<br><br>Dobrar</span></div>
+          
+        </div>
+        <div class=" col-md-8 kanji">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ichi_kaku/x4e59.html'>乙</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・おつ・<br><br>Segundo,último</span></div>
+          
+        </div>
+        <div class=" col-md-8 kanji">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ichi_kaku/x4e85.html'>亅</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・はねぽう・<br><br>Gancho</span></div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 kanji">二画</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 4e8c</div>
+        <div class=" col-md-8">unicode 4ea0</div>
+        <div class=" col-md-8">unicode 4eba</div>
+        <div class=" col-md-8">unicode 513f</div>
+        <div class=" col-md-8">unicode 5165</div>
+        <div class=" col-md-8">unicode 516b</div>
+        <div class=" col-md-8">unicode 5182</div>
+        <div class=" col-md-8">unicode 5196</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8" onclick="kanji2()">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x4e8c.html'>二</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　・に・<br><br>Dois</span></div>
+            
+        </div>
+        <div class=" col-md-8" onclick="kanji2()">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x4ea0.html'>亠</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・なべぶた・<br><br>Tampa</span></div>
+        </div>
+        <div class=" col-md-8" onclick="kanji3()">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x4eba.html'>人</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ひと・<br><br>Pessoa</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x513f.html'>儿</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ひとあし・にんによう・<br><br>Pernas</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5165.html'>入</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・いる・<br><br>Entrar</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x516b.html'>八</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・はち・はちがしら・<br><br>Oito : 8</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5182.html'>冂</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・えんがまえ・けいがまえ・<br><br>Caixa de cabeça para baixo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5196.html'>冖</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・わかんむり・<br><br>Cobrir,coroa</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 51ab</div>
+        <div class=" col-md-8">unicode 51e0</div>
+        <div class=" col-md-8">unicode 51f5</div>
+        <div class=" col-md-8">unicode 5200</div>
+        <div class=" col-md-8">unicode 529b</div>
+        <div class=" col-md-8">unicode 52f9</div>
+        <div class=" col-md-8">unicode 5315</div>
+        <div class=" col-md-8">unicode 531a</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x51ab.html'>冫</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・にすい・<br><br>Gelo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x51e0.html'>几</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　・つくえ・きによう・<br><br>Escrivaninha,mesa</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x51f5.html'>凵</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　・うけばこ・かんによう・<br><br>Recipiente,Boca aberta</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5200.html'>刀</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　・かたな・<br><br>faca,espada</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x529b.html'>力</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ちから・<br><br>Poder,força</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x52f9.html'>勹</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・つつみがまえ・<br><br>Embrulhar,envolver,abraçar</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5315.html'>匕</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み: ・さじ・さじのひ・Colher</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x531a.html'>匚</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・はこがまえ・<br><br>Caixa</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 5338</div>
+        <div class=" col-md-8">unicode 5341</div>
+        <div class=" col-md-8">unicode 535c</div>
+        <div class=" col-md-8">unicode 5369</div>
+        <div class=" col-md-8">unicode 5382</div>
+        <div class=" col-md-8">unicode 53b6</div>
+        <div class=" col-md-8">unicode 53c8</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5338.html'>匸</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・かくしがまえ・<br><br>Morto,ido</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5341.html'>十</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・じゅう・<br><br>Dez,completo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x535c.html'>卜</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ぼく・ぼくのと・<br><br>Adivinhação</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5369.html'>卩</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ふしづくり・<br><br>Selo,carimbo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x5382.html'>厂</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・がんだん・<br><br>Penhasco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x53b6.html'>厶</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・む・<br><br>privada</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='ni_kaku/x53c8.html'>又</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・また・<br><br>novamente,mão direita</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 kanji">三画</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 53e3</div>
+        <div class=" col-md-8">unicode 56d7</div>
+        <div class=" col-md-8">unicode 571f</div>
+        <div class=" col-md-8">unicode 58eb</div>
+        <div class=" col-md-8">unicode 5902</div>
+        <div class=" col-md-8">unicode 590a</div>
+        <div class=" col-md-8">unicode 5915</div>
+        <div class=" col-md-8">unicode 5927</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x53e3.html'>口</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　・くち・くちへん・<br><br>Boca,abertura</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x56d7.html'>囗</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・くにがまえ・<br><br>Recinto,cerca</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x571f.html'>土</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・つち・つちへん・<br><br>Terra,solo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x58eb.html'>士</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ちむらい・ちむらいかんむり・<br><br>Estudioso,solteiro</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5902.html'>夂</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ふゃがしら・<br><br>Inverno</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x590a.html'>夊</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  </span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5915.html'>夕</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・やうべ・<br><br>Noite,pôr do sol</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5927.html'>大</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・だい・<br><br>Grande,muito</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 5973</div>
+        <div class=" col-md-8">unicode 5b50</div>
+        <div class=" col-md-8">unicode 5b80</div>
+        <div class=" col-md-8">unicode 5bf8</div>
+        <div class=" col-md-8">unicode 5c0f</div>
+        <div class=" col-md-8">unicode 5c22</div>
+        <div class=" col-md-8">unicode 5c38</div>
+        <div class=" col-md-8">unicode 5c6e</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5973.html'>女</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・おんな・おんなへん・<br><br>Mulher,fêmea</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5b50.html'>子</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・こ・こへん・<br><br>Criança,semente</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5b80.html'>宀</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・うかんむり・<br><br>Cobertura,telhado</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5bf8.html'>寸</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・すん・すんづくり・<br><br>Sol(unidade de medida)</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5c0f.html'>小</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・しょうかんむり・<br><br>Pequeno,insignificante</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5c22.html'>尢</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・まげあし・<br><br>Coxo,manco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5c38.html'>尸</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・しかばね・<br><br>Cadáver</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5c6e.html'>屮</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・てつ・<br><br>Broto</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 5c71</div>
+        <div class=" col-md-8">unicode 5ddb</div>
+        <div class=" col-md-8">unicode 5de5</div>
+        <div class=" col-md-8">unicode 5df1</div>
+        <div class=" col-md-8">unicode 5dfe</div>
+        <div class=" col-md-8">unicode 5e72</div>
+        <div class=" col-md-8">unicode 5e7a</div>
+        <div class=" col-md-8">unicode 5e7f</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5c71.html'>山</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・やま・やまへん・やまかんむり・<br><br>Montanha</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5ddb.html'>巛</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・まがりがわ・<br><br>Rio curvado</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5de5.html'>工</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・たくみ・たくみへん・<br><br>Trabalho</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5df1.html'>己</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・おなれ・<br><br>mim,ti</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5dfe.html'>巾</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・はば・はばへん・<br><br>Turbante,lenço</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5e72.html'>干</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ほし・<br><br>Seco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5e7a.html'>幺</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・いとがしら・<br><br>Fio curto</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5e7f.html'>广</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・まだれ・<br><br>Penhasco,pontuado</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 5ef4</div>
+        <div class=" col-md-8">unicode 5efe</div>
+        <div class=" col-md-8">unicode 5f0b</div>
+        <div class=" col-md-8">unicode 5f13</div>
+        <div class=" col-md-8">unicode 5f50</div>
+        <div class=" col-md-8">unicode 5f61</div>
+        <div class=" col-md-8">unicode 5f73</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5ef4.html'>廴</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・えんにょう・いんにょう・<br><br>Passo largo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5efe.html'>廾</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・にじゅうあし・<br><br>Duas mãos,vinte</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5f0b.html'>弋</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・しきがまえ・<br><br>Cerimônia,tiro,seta</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5f13.html'>弓</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ゆみ・ゆみへん・<br><br>Arco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5f50.html'>彐</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・けいがしら・<br><br>Cabeça de porco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5f61.html'>彡</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・さんづくり・<br><br>Cabelos,cerdas,pelos,barba</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='san_kaku/x5f73.html'>彳</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・ぎっしんべん・<br><br>Passo</span></div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class=" col-md-7 kanji">四画</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 5fc3</div>
+        <div class=" col-md-8">unicode 6208</div>
+        <div class=" col-md-8">unicode 6236</div>
+        <div class=" col-md-8">unicode 624b</div>
+        <div class=" col-md-8">unicode 652f</div>
+        <div class=" col-md-8">unicode 6534</div>
+        <div class=" col-md-8">unicode 6587</div>
+        <div class=" col-md-8">unicode 6597</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x5fc3.html'>心</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・こころ・<br><br>Coração,mente,espírito</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6208.html'>戈</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ほこ・かのほき・<br><br>Lança,alabarda</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6236.html'>戶</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・と・とびらのと・<br><br>Porta,casa</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x624b.html'>手</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・て・<br><br>Mão</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x652f.html'>支</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・しにょう・<br><br>Ramo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6534.html'>攴</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6587.html'>文</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ぶん・<br><br>Roteiro,literatura</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6597.html'>斗</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・とます・ますづくり・<br><br>Colher de medicação</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 65a4</div>
+        <div class=" col-md-8">unicode 65b9</div>
+        <div class=" col-md-8">unicode 65e0</div>
+        <div class=" col-md-8">unicode 65e5</div>
+        <div class=" col-md-8">unicode 66f0</div>
+        <div class=" col-md-8">unicode 6708</div>
+        <div class=" col-md-8">unicode 6728</div>
+        <div class=" col-md-8">unicode 6b20</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x65a4.html'>斤</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・あおつくり・<br><br>Apunhalar,chicotear,bater</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x65b9.html'>方</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・ほう・ほうへん・<br><br>Forma,quadrado,jangada</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x65e0.html'>无</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x65e5.html'>日</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・にち・ひらび・<br><br>Sol,dia</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x66f0.html'>曰</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・いわく・<br><br>Dizer</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6708.html'>月</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・つき・つきへん・<br><br>Lua,mês,corpo,carne</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6728.html'>木</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・き・きへん・<br><br>Árvore</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6b20.html'>欠</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・あくび・<br><br>Bocejo,falta</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 6b62</div>
+        <div class=" col-md-8">unicode 6b79</div>
+        <div class=" col-md-8">unicode 6bb3</div>
+        <div class=" col-md-8">unicode 6bcb</div>
+        <div class=" col-md-8">unicode 6bd4</div>
+        <div class=" col-md-8">unicode 6bdb</div>
+        <div class=" col-md-8">unicode 6c0f</div>
+        <div class=" col-md-8">unicode 6c14</div>
+      </div>
+      <div class="row">
+
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6b62.html'>止</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・とめび・<br><br>Parar</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6b79.html'>歹</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・がつ・がつへん・いちた・<br><br>Morte,decadência</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6bb3.html'>殳</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・るまた・<br><br>Arma,lança</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6bcb.html'>毋</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・なかれ・<br><br>Não,mãe</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6bd4.html'>比</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・くらべる・<br><br>Comparar,competir</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6bdb.html'>毛</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・け・<br><br>Pelo,cabelo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6c0f.html'>氏</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・うじ・<br><br>Clã</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6c14.html'>气</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・きがまえ・<br><br>Vapor,ar</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 6c34</div>
+        <div class=" col-md-8">unicode 706b</div>
+        <div class=" col-md-8">unicode 722a</div>
+        <div class=" col-md-8">unicode 7236</div>
+        <div class=" col-md-8">unicode 723b</div>
+        <div class=" col-md-8">unicode 723f</div>
+        <div class=" col-md-8">unicode 7247</div>
+        <div class=" col-md-8">unicode 7259</div>
+      </div>
+
+
+      <div class="row">
+
+
+
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x6c34.html'>水</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・みず・<br><br>Água</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x706b.html'>火</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ひ・<br><br>Fogo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x722a.html'>爪</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・つめ・<br><br>Garra,prego</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x7236.html'>父</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ちち・<br><br>Pai</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x723b.html'>爻</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・こう・<br><br>Mistura,entreaço,cruzado</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x723f.html'>爿</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・しょうへん・<br><br>madeira de divisão</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x7247.html'>片</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・かた・<br><br>Fatia</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x7259.html'>牙</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・きばへん・<br><br>Presa</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 725b</div>
+        <div class=" col-md-8">unicode 72ac</div>
+      </div>
+
+      <div class="row">
+
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x725b.html'>牛</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・うし・<br><br>Vaca</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='shi_kaku/x72ac.html'>犬</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・いめ・<br><br>Cachorro</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 kanji">五画</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 7384</div>
+        <div class=" col-md-8">unicode 7389</div>
+        <div class=" col-md-8">unicode 74dc</div>
+        <div class=" col-md-8">unicode 74e6</div>
+        <div class=" col-md-8">unicode 7518</div>
+        <div class=" col-md-8">unicode 751f</div>
+        <div class=" col-md-8">unicode 7528</div>
+        <div class=" col-md-8">unicode 7530</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7384.html'>玄</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・げん・<br><br>Escuro,profundo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7389.html'>玉</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x74dc.html'>瓜</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x74e6.html'>瓦</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・かわら・<br><br>Azulejo,ladrilho</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7518.html'>甘</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・あまい・<br><br>Doce</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x751f.html'>生</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・うまれる・<br><br>Vida</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7528.html'>用</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・もちいる・<br><br>Usar,jogada</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7530.html'>田</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・た・たへん・<br><br>Campo,plantação de arroz</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 758b</div>
+        <div class=" col-md-8">unicode 7592</div>
+        <div class=" col-md-8">unicode 7676</div>
+        <div class=" col-md-8">unicode 767d</div>
+        <div class=" col-md-8">unicode 76ae</div>
+        <div class=" col-md-8">unicode 76bf</div>
+        <div class=" col-md-8">unicode 76ee</div>
+        <div class=" col-md-8">unicode 77db</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x758b.html'>疋</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ひき・ひきへん・<br><br>Peça de tecido</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7592.html'>疒</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・やまいだれ・<br><br>Doença</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7676.html'>癶</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・はつがしら・<br><br>Passos,partida,saída</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x767d.html'>白</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・しろ・はくへん・<br><br>Branco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x76ae.html'>皮</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・けがわ・<br><br>Pele</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x76bf.html'>皿</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・さら・<br><br>Prato,vasilha</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x76ee.html'>目</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・め・めへん・よこめ・<br><br>Olho</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x77db.html'>矛</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・むのほこ・ほこへん・<br><br>Lança,ponta</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 77e2</div>
+        <div class=" col-md-8">unicode 77f3</div>
+        <div class=" col-md-8">unicode 793a</div>
+        <div class=" col-md-8">unicode 79b8</div>
+        <div class=" col-md-8">unicode 79be</div>
+        <div class=" col-md-8">unicode 7a74</div>
+        <div class=" col-md-8">unicode 7acb</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x77e2.html'>矢</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・や・やへん・<br><br>Flecha</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x77f3.html'>石</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・いし・<br><br>pedra</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x793a.html'>示</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・しめす・<br><br>Altar,exibição</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x79b8.html'>禸</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・ぐうのあし・<br><br>Pista,caminho</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x79be.html'>禾</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・のぎ・のぎへん・<br><br>Árvore de dois galhos</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7a74.html'>穴</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・あな・あなかんむり・<br><br>Caverna</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='go_kaku/x7acb.html'>立</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・たつ・たつへん・<br><br>Erguer-se,levantar-se,ereto</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-7 kanji">六画</div>
+
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 7af9</div>
+        <div class=" col-md-8">unicode 7c73</div>
+        <div class=" col-md-8">unicode 7cf8</div>
+        <div class=" col-md-8">unicode 7f36</div>
+        <div class=" col-md-8">unicode 7f51</div>
+        <div class=" col-md-8">unicode 7f8a</div>
+        <div class=" col-md-8">unicode 7fbd</div>
+        <div class=" col-md-8">unicode 8001</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7af9.html'>竹</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・たけ・たけかんむり・<br><br>Bambu</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7c73.html'>米</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・こめ・こめへん・<br><br>Arroz</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7cf8.html'>糸</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・いと・いとへん・<br><br>Fio,linha,corda</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7f36.html'>缶</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・ほとぎ・<br><br>Lata,jarro de barro</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7f51.html'>网</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7f8a.html'>羊</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・ひとぎ・<br><br>Ovelha</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x7fbd.html'>羽</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・はわ・<br><br>Pena,asa</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x8001.html'>老</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 800c</div>
+        <div class=" col-md-8">unicode 8012</div>
+        <div class=" col-md-8">unicode 8033</div>
+        <div class=" col-md-8">unicode 807f</div>
+        <div class=" col-md-8">unicode 8089</div>
+        <div class=" col-md-8">unicode 81e3</div>
+        <div class=" col-md-8">unicode 81ea</div>
+        <div class=" col-md-8">unicode 81f3</div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x800c.html'>而</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:  ・しかして・<br><br>Ancinho,barba</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x8012.html'>耒</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・らいすぎ・<br><br>Arado,pá</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x8033.html'>耳</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・みみ・みみへん・<br><br>Orelha</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x807f.html'>聿</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・ふでづくり・<br><br>Pincel</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x8089.html'>肉</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・にく・<br><br>Carne</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x81e3.html'>臣</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・しん・<br><br>Ministro,oficial</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x81ea.html'>自</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・みずから・<br><br>Mim,ti,si mesmo</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x81f3.html'>至</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・いたる・いたるへん・<br><br>Chegar</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 81fc</div>
+        <div class=" col-md-8">unicode 820c</div>
+        <div class=" col-md-8">unicode 821b</div>
+        <div class=" col-md-8">unicode 821f</div>
+        <div class=" col-md-8">unicode 826e</div>
+        <div class=" col-md-8">unicode 8272</div>
+        <div class=" col-md-8">unicode 8278</div>
+        <div class=" col-md-8">unicode 864d</div>
+      </div>
+      <div class="row">
+
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x81fc.html'>臼</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・うす・<br><br>Argamassa,cimento</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x820c.html'>舌</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・した・<br><br>Língua</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x821b.html'>舛</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:      ・まいあし・<br><br>Oposto</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x821f.html'>舟</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:      ・ふね・ふねへん・<br><br>Barco</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x826e.html'>艮</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・こん・<br><br>Parada,pausa</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x8272.html'>色</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・いろ・<br><br>Cor</span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x8278.html'>艸</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     </span></div>
+        </div>
+        <div class=" col-md-8">
+          <ul class="conteudo"><br>
+            <li class='kanji'><a href='roku_kaku/x864d.html'>虍</a></li>
+          </ul>
+          <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・とらがしら・<br><br>Tigre</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-md-8">unicode 866b</div>
+        <div class=" col-md-8">unicode 8840</div>
+        <div class=" col-md-8">unicode 884c</div>
+        <div class=" col-md-8">unicode 8863</div>
+        <div class=" col-md-8">unicode 897e</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='roku_kaku/x866b.html'>虫</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・むし・むしへん・<br><br>Inseto</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='roku_kaku/x8840.html'>血</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・ち・<br><br>Sangue</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='roku_kaku/x884c.html'>行</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・ぎょうがまえ・ゆきがまえ・</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='roku_kaku/x8863.html'>衣</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　　　・ころも・<br><br>Vestuário</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='roku_kaku/x897e.html'>襾</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">七画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 898b</div>
+      <div class=" col-md-8">unicode 89d2</div>
+      <div class=" col-md-8">unicode 8a00</div>
+      <div class=" col-md-8">unicode 8c37</div>
+      <div class=" col-md-8">unicode 8c46</div>
+      <div class=" col-md-8">unicode 8c55</div>
+      <div class=" col-md-8">unicode 8c78</div>
+      <div class=" col-md-8">unicode 8c9d</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x898b.html'>見</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・みる・<br><br>Ver</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x89d2.html'>角</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・つの・つのへん・<br><br>Chifre</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8a00.html'>言</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・ことば・ごんべん・<br><br>Discurso</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8c37.html'>谷</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・たに・たにへん・<br><br>Vale</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8c46.html'>豆</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・まめ・まめへん・<br><br>Feijão</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8c55.html'>豕</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・いのこ・<br><br>Porco</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8c78.html'>豸</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・むじな・<br><br>Gato, texugo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8c9d.html'>貝</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・かい・かいへん・<br><br>Concha</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 8d64</div>
+      <div class=" col-md-8">unicode 8d70</div>
+      <div class=" col-md-8">unicode 8db3</div>
+      <div class=" col-md-8">unicode 8eab</div>
+      <div class=" col-md-8">unicode 8eca</div>
+      <div class=" col-md-8">unicode 8f9b</div>
+      <div class=" col-md-8">unicode 8fb0</div>
+      <div class=" col-md-8">unicode 8fb5</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8d64.html'>赤</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・あか・<br><br>Vermelho</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8d70.html'>走</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・はしる・そうにょう・<br><br>Correr</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8db3.html'>足</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・あし・あしへん・<br><br>Pé, perna</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8eab.html'>身</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・み・みへん・<br><br>Corpo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8eca.html'>車</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・くるま・くるまへん・<br><br>Veiculo, carro</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8f9b.html'>辛</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・からい・<br><br>Apimentado,picante,amargo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8fb0.html'>辰</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・しんのたつ・<br><br>manhã</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x8fb5.html'>辵</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9091</div>
+      <div class=" col-md-8">unicode 9149</div>
+      <div class=" col-md-8">unicode 91c6</div>
+      <div class=" col-md-8">unicode 91cc</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x9091.html'>邑</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x9149.html'>酉</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・さけのとり・ひよみのとり・<br><br>Saquê</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x91c6.html'>釆</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・のごめ・のごめへん・<br><br>Dividir, separar</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='xiti_kaku/x91cc.html'>里</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・さと・さとへん・<br><br>Vila</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">八画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 91d1</div>
+      <div class=" col-md-8">unicode 9577</div>
+      <div class=" col-md-8">unicode 9580</div>
+      <div class=" col-md-8">unicode 961c</div>
+      <div class=" col-md-8">unicode 96b6</div>
+      <div class=" col-md-8">unicode 96b9</div>
+      <div class=" col-md-8">unicode 96e8</div>
+      <div class=" col-md-8">unicode 9751</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x91d1.html'>金</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・かね・かねへん・<br><br>Metal, ouro</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x9577.html'>長</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・ながい・<br><br>Longo,comprido,crescer,líder</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x9580.html'>門</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・もんがまえ・<br><br>Portão</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x961c.html'>阜</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x96b6.html'>隶</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・れいづくり・<br><br>Escravo, capturar</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x96b9.html'>隹</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・ふるとり・<br><br>Pássaro velho</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x96e8.html'>雨</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:      ・あめ・<br><br>Chuva</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x9751.html'>靑</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み: radical de aoi verde,azul</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 975e</div>
+    </div>
+    <div class="row">
+
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='hachi_kaku/x975e.html'>非</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・あらず・<br><br>Erro</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">九画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9762</div>
+      <div class=" col-md-8">unicode 9769</div>
+      <div class=" col-md-8">unicode 97cb</div>
+      <div class=" col-md-8">unicode 97ed</div>
+      <div class=" col-md-8">unicode 97f3</div>
+      <div class=" col-md-8">unicode 9801</div>
+      <div class=" col-md-8">unicode 98a8</div>
+      <div class=" col-md-8">unicode 98db</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x9762.html'>面</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・めん・<br><br>Rosto, face</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x9769.html'>革</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・かくのかわ・なめしがわ・<br><br>Couro</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x97cb.html'>韋</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     </span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x97ed.html'>韭</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・にら・<br><br>Alho</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x97f3.html'>音</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・あと・<br><br>Som</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x9801.html'>頁</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・おおがい・<br><br>Concha grande</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x98a8.html'>風</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・かぜ・<br><br>Vento</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x98db.html'>飛</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・とぶ・<br><br>Voar</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 98df</div>
+      <div class=" col-md-8">unicode 9996</div>
+      <div class=" col-md-8">unicode 9999</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x98df.html'>食</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・しょく・<br><br>Comida,alimento</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x9996.html'>首</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・くび・<br><br>Pescoço,cabeça</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='kyuu_kaku/x9999.html'>香</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・かあり・<br><br>Perfumado,aromático</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 99ac</div>
+      <div class=" col-md-8">unicode 9aa8</div>
+      <div class=" col-md-8">unicode 9ad8</div>
+      <div class=" col-md-8">unicode 9adf</div>
+      <div class=" col-md-8">unicode 9b25</div>
+      <div class=" col-md-8">unicode 9b2f</div>
+      <div class=" col-md-8">unicode 9b32</div>
+      <div class=" col-md-8">unicode 9b3c</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x99ac.html'>馬</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・うま・うまへん・<br><br>Cavalo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9aa8.html'>骨</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・ほね・ほねへん・<br><br>Osso</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9ad8.html'>高</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・たかい・<br><br>alto,comprido,caro</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9adf.html'>髟</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・かみがしら・かみかんむり・<br><br>Cabelo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9b25.html'>鬥</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・とうがまえ・たたかいがまえ・<br><br>Luta</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9b2f.html'>鬯</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・ちょう・においぎけ・<br><br>ervas,vinho sacrificial</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9b32.html'>鬲</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・れき・れきのかなえ・<br><br>Tripé,caldeirão</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juu_kaku/x9b3c.html'>鬼</a></li>
+
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:     ・おに・<br><br>Fanstasma,demônio</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十一画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9b5a</div>
+      <div class=" col-md-8">unicode 9ce5</div>
+      <div class=" col-md-8">unicode 9e75</div>
+      <div class=" col-md-8">unicode 9e7f</div>
+      <div class=" col-md-8">unicode 9ea5</div>
+      <div class=" col-md-8">unicode 9ebb</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuichi_kaku/x9b5a.html'>魚</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・うお・<br><br>Peixe</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuichi_kaku/x9ce5.html'>鳥</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・とり・<br><br>Passaro</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuichi_kaku/x9e75.html'>鹵</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・しお・<br><br>Sal</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuichi_kaku/x9e7f.html'>鹿</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・しか・<br><br>Cervo,veado</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuichi_kaku/x9ea5.html'>麥</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuichi_kaku/x9ebb.html'>麻</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・あさ・あさかんむり・<br><br>Cânhamo,linho</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十二画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9ec3</div>
+      <div class=" col-md-8">unicode 9ecd</div>
+      <div class=" col-md-8">unicode 9ed1</div>
+      <div class=" col-md-8">unicode 9ef9</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuni_kaku/x9ec3.html'>黃</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・きいろ・<br><br>Amarelo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuni_kaku/x9ecd.html'>黍</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:　　　　・きび・Painço,milho miúdo</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuni_kaku/x9ed1.html'>黑</a></li>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:<br><br><br><br><br><br><br><br>radical de 黒・くろ・</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juuni_kaku/x9ef9.html'>黹</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・ふつ・めいとり・<br><br>Bordado</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十三画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9efd</div>
+      <div class=" col-md-8">unicode 9f0e</div>
+      <div class=" col-md-8">unicode 9f13</div>
+      <div class=" col-md-8">unicode 9f20</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juusan_kaku/x9efd.html'>黽</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・かえる・<br><br>Rã,sapo,anfibio</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juusan_kaku/x9f0e.html'>鼎</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juusan_kaku/x9f13.html'>鼓</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・つづみ・<br><br>Tambor</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class='kanji'><a href='juusan_kaku/x9f20.html'>鼠</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・ねずみ・<br><br>Rato,camundongo</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十四画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9f3b</div>
+      <div class=" col-md-8">unicode 9f4a</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class="kanji"><a href='juushi_kaku/x9f3b.html'>鼻</a> </li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・はな・<br><br>Nariz</span></div>
+      </div>
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class="kanji"><a href='juushi_kaku/x9f4a.html'>齊</a> </li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:   ・せい・<br><br>Mesmo,uniformente</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" col-md-7 kanji">十五画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9f52</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class="kanji"><a href="juugo_kaku/x9f52.html">齒</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十六画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9f8d</div>
+      <div class=" col-md-8">unicode 9f9c</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class="kanji"><a href="juuroku_kaku/x9f8d.html">龍</a> </li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class="kanji"><a href="juuroku_kaku/x9f9c.html">龜</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-md-7 kanji">十七画</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">unicode 9fa0</div>
+    </div>
+    <div class="row">
+      <div class=" col-md-8">
+        <ul class="conteudo"><br>
+          <li class="kanji"><a href="juuxiti_kaku/x9fa0.html">龠</a></li>
+        </ul>
+        <div class='inf'><img src="../../img/inf.png">
+            <span>読み:    ・やく・<br><br>Flauta</span></div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+  </body>
+
+</html>

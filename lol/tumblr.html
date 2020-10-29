@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="estilo.css"type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+
+$(document).ready(function(){
+var api = 'https://api.tumblr.com/v2/blog/scipsy.tumblr.com/info?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4';
+$.getJSON(api,function(data){
+console.log(data);
+for (var i = 0; i < data.champions.length;i++){
+  var id3 = data.champions[i].id;
+  var partidas = data.champions[i].stats.totalSessionsPlayed;
+  var vitorias = data.champions[i].stats.totalSessionsWon;
+  var assistencia = data.champions[i].stats.totalAssists;
+  var murder = data.champions[i].stats.totalChampionKills;
+  var totalDamage = data.champions[i].stats.totalDamageDealt;
+  var magicDamage = data.champions[i].stats.totalMagicDamageDealt;
+  var fb = data.champions[i].stats.totalFirstBlood;
+  var gold = data.champions[i].stats.totalGoldEarned;
+  var minios = data.champions[i].stats.totalMinionKills;
+var porcen = Math.round((vitorias/partidas)*100);
+  var name = tr(id3);
+  $("#text-block").prepend("<h1>"+ name + "</h1><br>jogos R: "
+  +partidas + "Vitorias:"+vitorias+"<br><h3>"+porcen+
+  "%</h3><br><p class='red'>kill:</p>"+murder+
+  "<p class='red'>Dano Total</p>"+totalDamage+"<p class='red'>Dano Magico:</p>"
+  +magicDamage+"<p class='red'>Firstblood</p>"+fb+"<p class='red'>gold:</p>"
+  +gold+"<p class='red'>last Hit:</p>"+minios+"</p>");
+console.log(id3);
+}
+
+
+ });
+});
+    </script>
+  </head>
+  <body>
+
+<div id="form">
+
+    <div id="text-block">
+    waiting API
+    </div>
+    <div id="text-block-2">
+    waiting API
+    </div>
+
+</div>
+  </body>
+</html>

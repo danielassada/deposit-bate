@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input unico</title>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+
+   function myFunction() {
+   alert('js');
+    var x = document.getElementById("lol");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value; 
+    }
+    var n = text.search(/ en/g);
+    var play1 = text.substring(n, 0);//player1
+    var m = n+16;//linha 1
+    var top = text.slice(m);
+    var l =  top.search(/ en/g);
+    var res = top.substring(l,0);//player2
+    var k = l+m+16;//linha 2
+    var mid = text.slice(k);
+    var j = mid.search(/ en/g);
+    var rest = mid.substring(j,0);//player3
+    var i = k+j+16;//linha 3
+    var adc = text.slice(i);
+    var h = adc.search(/ en/g);
+    var resto = adc.substring(h,0);//player4
+    var g = i+h+16;
+    var top = text.slice(g);
+    var f = top.search(/ en/g);
+    var restof = top.substring(f,0)//player5
+
+
+   document.getElementById("demo").innerHTML = play1;
+  document.getElementById("play").innerHTML = res;
+document.getElementById("mid").innerHTML = rest;
+document.getElementById("adc").innerHTML = resto;
+document.getElementById("top").innerHTML = restof;
+}
+
+
+    //var y = res.length;
+//str=(59)
+//char(21)
+//drago52 entrou na sala.
+//JDempsey entrou na sala.
+//Meu ovo poha entrou na sala.
+//caitUdoDalest entrou na sala.
+//GUMMY BEAHR entrou na sala.
+</script>
+</head>
+<body>
+<div id="form">
+
+        <div id="text-header">
+           cole abaixo
+            <div class="shadow"></div>
+        </div>
+    
+        <div id="text-block">
+        <form action="" id="lol">
+            <textarea class="form-control" rows="10" cols="104" id="comment"></textarea>
+            </form>
+        </div>
+
+        <div id="text-footer">
+            <div id="buttons">
+                <div id="start-button" onclick="myFunction()">
+                    <div class="action-button">pronto</div>
+                    <div id="start-button-progress" style="display: none;"></div>
+                </div>
+<p id="demo">demo</p>   <p id="play">play</p> <p id="mid">play</p> <p id="adc">play</p> <p id="top">play</p>
+<a href="http://www.leagueofgraphs.com/pt/search/"></a>
+</body>
+</html>

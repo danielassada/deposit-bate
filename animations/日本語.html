@@ -1,0 +1,114 @@
+<!-- 書く	かく	kaku	to write -->
+<!-- 覚える	おぼえる	oboeru	to memorize, to remember -->
+<meta charset="utf-8">
+<style type="text/css">
+body{
+    background-color: black;
+    color: darkslateblue;
+}
+
+	@font-face {
+    	font-family: sword;
+	    src: url(../font/hkgokukaikk.ttf);
+	}
+	.japonese{
+		font-family: sword;
+	}
+	.container{
+	display: flex;
+	height: 60px;
+	color: #49e;
+	font-size: 40px;
+	width: 80%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 20%;
+	bottom: 0;
+	margin:auto;
+	overflow: hidden;
+}
+ul{
+	list-style:none;
+	padding-left: 10px;
+	animation: descer 7s infinite;
+}
+ul , p, li{
+	margin: 0;
+
+}
+@keyframes descer{
+	0%{margin-top: 0;}
+	20%{margin-top: 0;}
+	25%{margin-top:  -60px;}
+	50%{margin-top:  -60px;}
+	55%{margin-top:  -120px;}
+	80%{margin-top:  -120px;}
+	85%{margin-top:  -60px;}
+	95%{margin-top:  -60px;}
+	100%{margin-top: 0;}
+}
+.row {
+    display: -webkit-inline-box;
+}
+li{
+	display: flex;
+}
+.portuguese {
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    display: -webkit-inline-box;
+    font-size: 53px;
+    height: 60px;
+    overflow: hidden;
+}
+</style>
+
+
+<div class="container japonese">
+			<ul>
+				<li>
+					<div class="row">
+					<ruby><rb>書</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>
+					<p>
+					<ruby><rb>く</rb><rp>(</rp><rt> </rt><rp>)</rp></ruby>
+					</p>
+					</div>
+				</li>
+				<li>
+					<div class="row">
+					<ruby><rb>聞</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>
+					<p>
+					<ruby><rb>く</rb><rp>(</rp><rt> </rt><rp>)</rp></ruby>
+					</p>
+					</div>
+				</li>
+				<li>
+					<div class="row">
+					<ruby><rb>使	</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>
+					<p>
+					<ruby><rb>うく</rb><rp>(</rp><rt> </rt><rp>)</rp></ruby>
+					</p>
+					</div>
+				</li>
+			</ul>					
+		<p>ことは<ruby><rb>覚</rb><rp>(</rp><rt>おぼ</rt><rp>)</rp></ruby>えておくことです</p>
+
+	</div>
+
+	<div class="portuguese">
+			<ul>
+				<li>
+					write    
+				</li>
+				<li>
+					hear 
+				</li>
+				<li>
+					use 
+				</li>
+			</ul>					
+		<p>is　memorize</p>
+
+	</div>

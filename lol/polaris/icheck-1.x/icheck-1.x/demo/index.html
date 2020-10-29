@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Checkboxes and radio buttons customization (jQuery and Zepto) plugin</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width" name="viewport">
+  <link href="./css/custom.css?v=1.0.2" rel="stylesheet">
+  <link href="../skins/all.css?v=1.0.2" rel="stylesheet">
+  <script src="./js/jquery.js"></script>
+  <script src="../icheck.js?v=1.0.2"></script>
+  <script src="./js/custom.min.js?v=1.0.2"></script>
+
+</head>
+<body>
+ 
+
+
+
+  <link href="polaris/custom.css?v=1.0.2" rel="stylesheet">
+  <link href="polaris/all.css?v=1.0.2" rel="stylesheet">
+  <script src="polaris/jquery.js"></script>
+  <script src="polaris/icheck.js?v=1.0.2"></script>
+  <script src="polaris/custom.min.js?v=1.0.2"></script>
+
+polaris/
+
+
+
+
+
+      <div class="skin skin-polaris">
+        <div class="arrows">
+          <div class="top" data-to="skin-line"></div>
+          <div class="bottom" data-to="skin-futurico"></div>
+        </div>
+        <h3>Polaris skin</h3>
+        <dl class="clear">
+          <dd class="selected">
+            <div class="skin-section">
+              <h4>Live</h4>
+              <ul class="list">
+                <li>
+                  <input tabindex="21" type="checkbox" id="polaris-checkbox-1">
+                  <label for="polaris-checkbox-1">Checkbox 1</label>
+                </li>
+                <li>
+                  <input tabindex="22" type="checkbox" id="polaris-checkbox-2" checked>
+                  <label for="polaris-checkbox-2">Checkbox 2</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="polaris-checkbox-disabled" disabled>
+                  <label for="polaris-checkbox-disabled">Disabled</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="polaris-checkbox-disabled-checked" checked disabled>
+                  <label for="polaris-checkbox-disabled-checked">Disabled &amp; checked</label>
+                </li>
+              </ul>
+              <ul class="list">
+                <li>
+                  <input tabindex="23" type="radio" id="polaris-radio-1" name="polaris-radio">
+                  <label for="polaris-radio-1">Radio button 1</label>
+                </li>
+                <li>
+                  <input tabindex="24" type="radio" id="polaris-radio-2" name="polaris-radio" checked>
+                  <label for="polaris-radio-2">Radio button 2</label>
+                </li>
+                <li>
+                  <input type="radio" id="polaris-radio-disabled" disabled>
+                  <label for="polaris-radio-disabled">Disabled</label>
+                </li>
+                <li>
+                  <input type="radio" id="polaris-radio-disabled-checked" checked disabled>
+                  <label for="polaris-radio-disabled-checked">Disabled &amp; checked</label>
+                </li>
+              </ul>
+            </div>
+            <div class="skin-section skin-states">
+              <h4>States</h4>
+              <ul class="list">
+                <li>
+                  <div class="state icheckbox_polaris"></div>
+                  <div class="state iradio_polaris"></div>
+                  Normal
+                </li>
+                <li>
+                  <div class="state icheckbox_polaris hover"></div>
+                  <div class="state iradio_polaris hover"></div>
+                  Hover
+                </li>
+                <li>
+                  <div class="state icheckbox_polaris checked"></div>
+                  <div class="state iradio_polaris checked"></div>
+                  Checked
+                </li>
+                <li>
+                  <div class="state icheckbox_polaris disabled"></div>
+                  <div class="state iradio_polaris disabled"></div>
+                  Disabled
+                </li>
+                <li>
+                  <div class="state icheckbox_polaris checked disabled"></div>
+                  <div class="state iradio_polaris checked disabled"></div>
+                  Disabled &amp; checked
+                </li>
+              </ul>
+            </div>
+            <script>
+            $(document).ready(function(){
+              $('.skin-polaris input').iCheck({
+                checkboxClass: 'icheckbox_polaris',
+                radioClass: 'iradio_polaris',
+                increaseArea: '-10%'
+              });
+            });
+            </script>
+          </dd>
+         
+</body>
+</html>

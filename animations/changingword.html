@@ -1,0 +1,72 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+<style type="text/css">
+	body{
+    	background-color: lightpink;
+    	color: darkslateblue;
+	}
+	.outer-div
+	{
+    	padding: 30px;
+    	text-align: center;
+	}
+	.inner-div
+	{
+    	display: inline-block;
+     	padding: 50px;
+	}
+	@font-face {
+    	font-family: sword;
+	    src: url(../font/hkgokukaikk.ttf);
+	}
+	.japanese{
+		font-family: sword;
+		font-size: 45px;
+	}
+	#jap_kai ,#pt_kai{
+		color:#00f;
+	}
+	.pt{
+		color: slateblue;
+		font-size: 35px;
+	}
+</style>
+	<div class="outer-div"><div class="inner-div">
+		<p class="japanese">ゆ う べ は 
+			<i id="jap_kai"><ruby><rb>雨</rb><rp>(</rp><rt>あめ</rt><rp>)</rp></ruby></i>
+	 		が ふ り ま し た
+	 	</p>
+	 	<p class="pt">
+	 		<i id="pt_kai">Choveu</i>
+	 	 ontem à noite. 
+	 	</p>
+	</div></div>	
+<script type="text/javascript">
+	var words_jp = new Array(
+		'<ruby><rb>雪</rb><rp>(</rp><rt>ゆき</rt><rp>)</rp></ruby>',
+		'<ruby><rb>雨</rb><rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>'
+		);
+	var words_pt = new Array(
+		'Nevou',
+		'Choveu'
+		);
+
+
+///Then you can set an interval to constantly loop through the array.
+
+let i = 0;
+let f = 0;
+setInterval( function(){
+    $( '#jap_kai' ).html( words_jp[ i ] );
+    if( i < words_jp.length ) {
+        i++;
+    } else {
+        i = 0;
+    }
+    $( '#pt_kai' ).html( words_pt[ f ] );
+    if( f < words_pt.length ) {
+        f++;
+    } else {
+        f = 0;
+    }
+}, 5000 );
+</script>

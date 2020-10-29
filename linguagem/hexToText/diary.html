@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>always enc</title>
+</head>
+<style>
+body{
+    background-color: black;
+    color: aliceblue;
+}
+#peek{
+    background-color: midnightblue;
+    width: 80vw;
+    min-height: 25px;
+    margin: auto;
+    position: relative;
+    align-self: center;
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+}
+</style>
+<body>
+    {% for arg in data %}
+        <div class='buttton {{args.tag}}'>
+            <span class='descri '>
+                {{args.description}}
+            </span>
+            <a href='{{args.link}}'>
+                {{args.title}}
+            </a>
+        </div>
+
+        <div class="container">
+            <form method="post" action="{% url 'dev:encrypt' %}" id="enc"> {% csrf_token %} {{ form.as_p }}
+                <label for="id_start">{{arg.create}}</label>
+                <input label='link' type="text" name="start" maxlength="250" id="id_start">
+                <input method="post" name="add" type="submit" id="add" value="Adicionar" class="button-azul">
+            </form>
+            <form method="post" action="{% url 'dev:peek' %}" id="always"> {% csrf_token %} {{ form.as_p }}
+                <label for="fixed">{{arg.fixed}}</label>
+                <input label='link' type="text" name="start" maxlength="250" id="fixed">
+                <input method="post" name="add" type="submit" id="show" value="Adicionar" class="button-azul">
+            </form>
+            <div id="peek" onclick="clear()"></div>
+        </div>   
+    {% endfor %}
+
+    <script>
+        const clear () => {
+
+        }
+    </script>
+</body>
+
+</html>

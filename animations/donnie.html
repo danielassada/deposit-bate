@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<style type="text/css">
+body{background-color: #000;}
+#endf{
+    font-size: 55px;
+    color:#fff;
+}    
+div, img{
+    padding: 0;
+    margin:auto;
+    max-width: 400px;
+}
+</style>    
+</head>
+<body>
+    <div id="follow_Date">
+        <img src="donnie.png">    
+        <p id="endf">loading...</p>
+    </div>
+<script type="text/javascript">
+setInterval(function(){ 
+    let date = new Date();
+    date.setDate(date.getDate() + 28);
+    date.setHours(date.getHours() + 6);
+    date.setMinutes(date.getMinutes() + 42);
+    date.setSeconds(date.getSeconds() + 12);
+    console.log(date);
+
+//     newdate.setDate(newdate.getDate() + 3);
+    
+     let dd = date.getDate();
+     let mm = date.getMonth() + 1;
+     let y = date.getFullYear();
+
+     let hr = date.getHours();
+     let min = date.getMinutes();
+     let sec = date.getSeconds();
+     let someFormattedDate = dd + '/' + mm + '/' + y +'     -        '+hr+':'+ min+':'+ sec;
+    
+     document.getElementById('endf').innerHTML = someFormattedDate;
+}, 1000);
+</script>
+</body>
+</html>
+
+
+

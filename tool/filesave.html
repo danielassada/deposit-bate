@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create file</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+    <script src="filesave.js"></script>
+</head>
+
+<body>
+    <button id="save-btn">Save Text file</button>
+    <script>
+        $("#save-btn").click(function () {
+            var blob = new Blob(["test text"], {
+                type: "text/plain;charset=utf-8"
+            });
+            saveAs(blob, "testfile1.txt");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>input unico</title>
+	<script type="text/javascript" src="main.js"></script>
+	<script>
+function myFunction() {
+alert('sas');
+    var x = document.getElementById("lol");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value;
+    var str = "link";
+    var result = str.link("http://www.leagueofgraphs.com/pt/search/"+text);
+    }
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+</head>
+<body>
+<form id="lol" action="form_action.asp">
+	<input type="text">
+		<button type="button" onclick="myFunction()">Click Me!</button>
+</form>
+<p id="demo"></p>
+<a href="http://www.leagueofgraphs.com/pt/search/"></a>
+</body>
+</html>

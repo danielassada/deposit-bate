@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Bitter;
     src: url(font/regular.otf);
@@ -13,13 +14,12 @@ header  {
 header:hover{
 }
 body{
-  margin:0px;
   background-color: #D3D3D3;/*light gray*/
 }
 footer {
    margin: 20px;
    padding: 20px;
-   height: 60px; 
+   height: 60px;
 width: 100%;
 bottom: 0px;
 position: absolute;
@@ -77,20 +77,21 @@ ul li ul {
 
 }
 ul li ul li {transition: .5s}
-ul li ul li:hover { 
+ul li ul li:hover {
    animation-name: btn1;
    animation-delay: .5s;
    animation-duration: .5s;
    animation-timing-function: linear;
    animation-iteration-count: 1;}
 
+}
 ul ul, ol ul {
     list-style-type: none;
 }
 ul li ul li {
   background: white;
   display: block;
-   
+
 } /*inside|outside|initial*/
 ul li ul li a {
   display:block !important;}
@@ -105,7 +106,7 @@ td.itemcontent {
 }
 
 
-/*primeiro =defeito*/
+}/*primeiro =defeito*/
 #primeiro{
 margin-left: 890px;
 width: 25%;
@@ -120,9 +121,9 @@ color:black;
 #audio{
 
 border-radius: 25px;
-
+position: ;
 }
-    
+
 a:-webkit-any-link {
     color: -webkit-link;
     text-decoration: none;
@@ -176,7 +177,7 @@ text-align: center;
 100%{transform: rotateX(0);}
 }
 .btn{transition: .5s}
-.btn:hover { 
+.btn:hover {
    animation-name: btn;
    animation-delay: .5s;
    animation-duration: .5s;
@@ -185,13 +186,13 @@ text-align: center;
    background-image: url(saf.jpg);
 }
 #content{
-  margin-top: 75px;
+  margin-top: 25px;
   background-color: white;
   background-size: 500px;
 }
 tr.ic{
   background-color: black;
-  height:100px; 
+  height:100px;
   width:100px;
 }
 
@@ -215,7 +216,7 @@ tr.ic{
 #color{
   margin-left: 15px;
   height: 75px;
-  width:100px; 
+  width:100px;
 }
 
 #red {
@@ -236,16 +237,15 @@ tr.ic{
 }
 
 #nav{
-  background-color: #6A5ACD;
-  align-items: stretch;
-  width: 100%;
-  height: 80px;
+  background-color: #D3D3D3;
+  border-radius: 35px;
+  border:10px solid #6A5ACD;
+  width: 1200px;
   padding: 10px;
   position: relative;
-  margin: 0;
+  margin-top: 0;
+  align-content: center;
   z-index: 100;
-  text-align: center;
-
 
 }
 #nav a{
@@ -254,17 +254,13 @@ color:#000;
 }
 #nav ul li{
   width: 125px;
-  margin: 0;
-  right: 0;
+  margin-top: 22.5px;
   color:#000 ;
   font-style: normal;
   background-color: #6A5ACD;
-  padding: 25px;
+  padding: 13px;
+  margin-left: 5px;
   z-index: 1;
-  border-right:3px solid #000;
-    display: block;
-   list-style-type: none;
-     float: left;
 }
 #car {
   position: absolute;
@@ -272,23 +268,17 @@ color:#000;
   z-index: 0;
 }
 #footer{
-  bottom: 0;
-  margin-top: 1800px;
   position: absolute;
+  bottom: 0;
   width: 100%;
-}
-#hide{
-  margin-bottom:  -999px;
-  display: hidden;
-color: #D3D3D3;
-
+  margin-top: 1800px;
 }
 /*
 .flut a{
-margin: 75px 10px 400px 1000px; 
+margin: 75px 10px 400px 1000px;
 }
 .flut#btn{
- 
+
 transition: .5s
 }
 .flut#btn:hover{animation-name: btn;
@@ -298,4 +288,28 @@ transition: .5s
    animation-iteration-count: 1;
    background-image: url(saf.jpg);
    */
+#hide{
+  margin-bottom: -99999px;
+  z-index: 999;
+  color: transparent;
+}
 
+
+.lateral{
+  margin-left: 50%;
+  margin-top: -575px;
+  position: fixed;
+}
+canvas{
+  border-style:solid;
+  border-width: 5px ;
+  border-color:#6A5ACD;
+}
+.col-md-8 {
+    background-color: #fff;
+    float: left;
+    width: 12%;
+    position: static;
+    margin-left: 2px;
+    margin-top: 2px;
+}

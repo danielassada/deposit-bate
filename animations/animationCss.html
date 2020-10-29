@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample li</title>
+	<meta charset="utf-8">
+<style type="text/css">
+body{
+	background-color: #dcc;
+}	
+.container{
+	display: flex;
+	width: 300px;
+	height: 40px;
+	color: #49e;
+	font-size: 40px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin:auto;
+	overflow: hidden;
+}
+ul{
+	list-style:none;
+	padding-left: 10px;
+	animation: descer 7s infinite;
+}
+ul , p, li{
+	margin: 0;
+}
+@keyframes descer{
+	0%{margin-top: 0;}
+	20%{margin-top: 0;}
+	25%{margin-top:  -48px;}
+	50%{margin-top:  -48px;}
+	55%{margin-top:  -96px;}
+	80%{margin-top:  -96px;}
+	85%{margin-top:  -48px;}
+	95%{margin-top:  -48px;}
+	100%{margin-top: 0;}
+}
+</style>	
+</head>
+<body>
+	<div class="container">
+		<p>Hello</p>
+			<ul>
+				<li>world</li>
+				<li>mundo</li>
+				<li>дура</li>
+			</ul>					
+
+	</div>
+</body>
+</html>

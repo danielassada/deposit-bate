@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wireshark</title>
+<style type="text/css">
+	body{
+		background: #99a;
+	}
+	.row{
+		background: white;
+		font-size: 25px;
+		font-style: bold;
+		color: blueviolet;
+	}
+	.inf{
+		font-size: 16px;
+		color: black;
+	}
+</style>	
+</head>
+<body>
+<h1>FILTERs:</h1>
+	<div class="row">udp or dns or http 
+	<p class="inf">inf:show only the typo of the protocol you want	</p>
+	</div>
+	
+	<div class="row">tcp.port == 8000
+	<p class="inf">inf:show packege that pass through the select port</p>
+	</div>
+
+	<div class="row">tcp.analysis.flags
+	<p class="inf">inf: show packege with flags for thoubleshoting	</p>
+	</div>
+
+	<div class="row">!(arp or dns or icmp)
+	<p class="inf">inf: hide the protocol within the parentheses</p>
+	</div>
+</body>
+</html>

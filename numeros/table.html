@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+	<style>
+	.jsontotable table, .jsontotable th, .jsontotable td {
+		border: 1px solid black;
+		margin: 10px;
+	}
+
+  code {
+    white-space: normal;
+  }
+	</style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script type="text/javascript">
+$.ajax({
+	url: 'mega.json',
+	type: 'get',
+	cache: false,
+	success : function(data){
+		$(data.articles).each(function(index, value){
+		console.log(value.name);
+		  });
+	}
+});
+$("#mega")
+  .append($("<h2></h2>").html("Output"));
+});
+function importData(){
+d3.json("data/mega.json", function (data){
+console.log(data);
+})
+}
+importData()
+  </script>
+<h5>ola</h5>
+  </body>
+
+  </html>

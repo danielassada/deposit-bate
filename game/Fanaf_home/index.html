@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="estilo.css"
+ type="text/css" href="img/logo.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(document).mousemove(function(event){
+        $("span").text("X: " + event.pageX + ", Y: " + event.pageY);
+    });
+});
+
+
+
+
+</script>
+</head>
+<body>
+
+<p>The mouse pointer position is at: <span></span></p>
+<div class="arrow-up"></div>
+<div class="arrow-down"></div>
+<div class="arrow-left"></div>
+<div class="arrow-right"></div>
+</body>
+</html>

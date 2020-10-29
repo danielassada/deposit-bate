@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<style type="text/css">
+body{
+    width:100%;
+    margin:auto;
+    background-color: #030323;
+    
+}
+#bg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+}
+#follow_Date{
+    top: 25px; 
+    left: 0; 
+    position: absolute; 
+    /*font-size: 35px;*/
+    color:#a9e;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(10, 1fr);
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:1em;
+    justify-items:stretch;
+    align-items:stretch;
+    padding:1em;
+}    
+div, img{
+    padding: 0;
+    margin:auto;
+}
+#follow_Date > div{
+      /*background:#8B4513;*/
+    }
+#follow_Date>div{
+    height: 100px;
+    margin: 3px 3px 3px 3px;
+    /*align-self: end;*/
+}
+
+#text-block{
+    position: relative;
+}
+#text-block>div{
+    background-color: #fff;
+    margin-top: 3px;
+}
+#text-block>div>img{
+    max-height: 200px;
+}
+.left{
+    margin-left: 50px;
+    display: inline-block;
+}
+#canada{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
+#russiaD{
+grid-column:8/9;
+grid-row: 2
+}
+#japaoD{
+grid-column:10;
+grid-row: 4;
+justify-self: end;
+}
+#uniet_stades_of_america{
+    grid-column:2;
+    grid-row: 4;
+    justify-self:end;
+}
+.europa{
+    grid-column: 5;
+    grid-row: 3/4;
+    display:grid;
+    justify-self: enf;
+    grid-template-columns:repeat(3, 1fr);
+    /*grid-auto-rows:repeat(3, 1fr);*/
+    /*background-image: url(beuro.png);*/
+}
+#hong_Kong{
+    grid-column:9;
+    grid-row: 5
+}
+#china{
+    grid-column:8/9;
+    grid-row: 4;
+    justify-self:end;
+}
+#saudi_Arabia{
+    grid-column: 6;
+    grid-row: 5;
+    justify-self: end;
+    margin-left:110px !important; 
+}
+#india{
+    grid-column: 7;
+    grid-row: 5;
+    justify-self: end;
+}
+#brasilD{
+    background-image: url(brasilhue.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ff00ff;
+    grid-column:4;
+    grid-row: 6;
+}
+#argentina{
+    grid-column: 3;
+    grid-row: 6;
+}
+#australia{
+    grid-column: 10;
+    grid-row: 6;
+}
+#spain{
+    grid-column: 1;
+    grid-row: 3;
+}
+#france{
+    grid-column: 2;
+    grid-row: 2/3;
+}
+#germany{
+    grid-column: 3;
+    grid-row: 1;
+}
+#italiaD{
+    grid-column: 3;
+    grid-row: 3;
+}
+#euro{
+    position: absolute;
+    top: 27%;
+    left: 30%;
+}
+</style>    
+</head>
+<body> 
+    <img id="euro" src="beuro.png">
+    <img id="bg" src="map.png">
+    <div id="follow_Date">
+        <div id="canada"><h5>canada</h5></div>
+        <div class="europa">
+        <div id="spain"><h5>spain</h5></div>
+        <div id="france"><h5>france</h5></div>
+        <div id="germany"><h5>germany</h5></div>
+        <div id="italiaD"><h5>italia</h5></div>
+        </div>
+        <div id="russiaD"><h5>russia</h5></div>
+        <div id="uniet_stades_of_america"><h5>USA</h5></div>
+        <div id="hong_Kong"><h5>hong_Kong</h5></div>
+        <div id="china"><h5>china</h5></div>
+        <div id="brasilD"><h5>brasil</h5></div>
+        <div id="japaoD"><h5>japao</h5></div>
+        <div id="saudi_Arabia"><h5>saudi_Arabia</h5></div>
+        <div id="india"><h5>india</h5></div>
+        <div id="australia"><h5>australia</h5></div>
+        <div id="argentina"><h5>argentina</h5></div>
+
+    </div>
+    <div id="text-block"></div>
+<script type="text/javascript">
+
+// window.date = new Date()/
+
+const dateProto = {
+  init: function(){
+    this.fuso = fuso
+    // this.p = p ;
+  },
+  cal: function() {
+    let fuso = this.fuso
+    this.time = new Date().toLocaleString("en-US", {timeZone: fuso})
+    let timez = this.time 
+    let p = this.p
+
+// https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+    document.getElementById(p).append(timez);
+  }
+      
+}
+                                    
+var brasil = Object.create(dateProto)
+brasil.fuso = "America/Sao_Paulo"
+brasil.p = 'brasilD'
+brasil.cal();
+
+var russia = Object.create(dateProto)
+russia.fuso = "Europe/Moscow"
+russia.p = 'russiaD'
+russia.cal();
+
+var japao = Object.create(dateProto)
+japao.fuso = "Asia/Tokyo"
+japao.p = 'japaoD'
+japao.cal();
+
+var italia = Object.create(dateProto)
+italia.fuso = "Europe/Rome"
+italia.p = 'italiaD'
+italia.cal();
+
+var canada = Object.create(dateProto)
+canada.fuso = "America/Vancouver"
+canada.p = 'canada'
+canada.cal();
+
+var australia = Object.create(dateProto)
+australia.fuso = "Australia/Melbourne"
+australia.p = 'australia'
+australia.cal();
+
+
+const top_headlines = {
+  init: function(){
+    this.country = country
+  },
+  search: function() {
+    let country = this.country
+
+    let api = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=883726e427a541609ad6a7e2dc25b971`;
+
+
+    $.getJSON(api,function(data){
+        for (var i = 0; i < data.articles.length;i++){
+            console.log(data.articles[i]);
+
+            let id = data.articles[i].title;             
+            let urlToImage = data.articles[i].urlToImage;
+            let author = data.articles[i].author;
+            let description = data.articles[i].description;
+            let url = data.articles[i].url;
+    
+            $("#text-block").prepend("<div><h5>"+ id + "</h5>"+
+            "<img src='"+urlToImage+"' alt='notice-img-"+i+"'>"+    
+            "<div class='left'><p>author:"+author+"</p>"+
+            "<p>description:"+description+"</p>"+
+            "<a href='"+url+"'>origem</a>"
+            +"</div></div>");
+        }
+    });
+  }
+      
+}
+
+var hlbr = Object.create(top_headlines)
+hlbr.country = 'br'
+$('#brasilD').bind('click', function() {
+    hlbr.search();
+});
+var hlru = Object.create(top_headlines)
+hlru.country = 'ru'
+$('#russiaD').bind('click', function() {
+    hlru.search();
+});
+var hlit = Object.create(top_headlines)
+hlit.country = 'it'
+$('#italiaD').bind('click', function() {
+    hlit.search();
+});
+
+
+
+var hlus = Object.create(top_headlines)
+hlus.country = 'us'
+$('#uniet_stades_of_america').bind('click', function() {
+    hlus.search();
+});
+var hlsa = Object.create(top_headlines)
+hlsa.country = 'sa'
+$('#Saudi_Arabia').bind('click', function() {
+    hlsa.search();
+});
+var hlin = Object.create(top_headlines)
+hlin.country = 'in'
+$('#India').bind('click', function() {
+    hlin.search();
+});
+
+var hlhk = Object.create(top_headlines)
+hlhk.country = 'hk'
+$('#hong_Kong').bind('click', function() {
+    hlhk.search();
+});
+var hlfr = Object.create(top_headlines)
+hlfr.country = 'fr'
+$('#france').bind('click', function() {
+    hlfr.search();
+});
+var hles = Object.create(top_headlines)
+hles.country = 'es'
+$('#spain').bind('click', function() {
+    hles.search();
+});
+var hlde = Object.create(top_headlines)
+hlde.country = 'de'
+$('#germany').bind('click', function() {
+    hlde.search();
+});
+var hlcn = Object.create(top_headlines)
+hlcn.country = 'cn'
+$('#china').bind('click', function() {
+    hlcn.search();
+});
+var hlca = Object.create(top_headlines)
+hlca.country = 'ca'
+$('#canada').bind('click', function() {
+    hlca.search();
+});
+var hlau = Object.create(top_headlines)
+hlau.country = 'au'
+$('#australia').bind('click', function() {
+    hlau.search();
+});
+var hlar = Object.create(top_headlines)
+hlar.country = 'ar'
+$('#argentina').bind('click', function() {
+    hlar.search();
+});
+
+
+
+
+
+let test =(countrwy) =>{
+    let apiw = `https://newsapi.org/v2/top-headlines?country=${countrwy}&apiKey=883726e427a541609ad6a7e2dc25b971`;
+    $.getJSON(apiw,function(data){
+        for (var i = 0; i < data.articles.length;i++){
+            console.log(data.articles[i]);
+
+            let id = data.articles[i].title;             
+            let urlToImage = data.articles[i].urlToImage;
+            let author = data.articles[i].author;
+            let description = data.articles[i].description;
+            let url = data.articles[i].url;
+    
+            $("#text-block").prepend("<div><h5>"+ id + "</h5>"+
+            "<img src='"+urlToImage+"' alt='notice-img-"+i+"'>"+    
+            "<div class='left'><p>author:"+author+"</p>"+
+            "<p>description:"+description+"</p>"+
+            "<a href='"+url+"'>origem</a>"
+            +"</div></div>");
+        }
+    });
+}
+
+</script>
+</body>
+</html>
+
+
+
+In a Linux environment, something like this:
+
+/var/www/your_script.php (public access)
+/var/secure/api_key.php (private, web server doesn't access this directory)
+in your_script.php
+
+require_once 'api_key.php'; // example only, you will need to use the correct path
+echo $api_key; // testing, you can use the key in the script
+in api_key.php
+
+$api_key = '15r723er8q5re';
