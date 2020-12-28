@@ -1,146 +1,102 @@
   <!doctype html>
-   <html lang="pt-br">
-    <head>
+  <html lang="pt-br">
+
+  <head>
     <meta charset="utf-8">
     <title>depositOFwords</title>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-png"/>
-     
-     <link rel="stylesheet" href="../css/novo.css"
-    type="text/css" href="img/logo.png">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-png" />
+
+    <link rel="stylesheet" href="../css/novo.css" type="text/css" href="img/logo.png">
     <style type="text/css">
-      .btn_container{
+      .btn_container {
         height: 70px;
         width: 100%;
-        position:fixed;
-        top:140px;
+        position: fixed;
+        top: 140px;
+        right: 100px;
       }
-      .medio{
+
+      .medio {
         min-width: 200px;
         max-width: 300px;
         min-height: 200px;
         max-height: 300px;
       }
-      .caixa{
+
+      .caixa {
         display: inline-block;
       }
-      .caixinha{
-        display:table-column;
+
+      .caixinha {
+        display: table-column;
       }
-      #corpo{
+
+      #corpo {
         display: inline-block;
-        top:700px;
-        width:100%;
+        top: 700px;
+        width: 100%;
       }
-      .row{
-        width:100%;
+
+      .row {
+        width: 100%;
       }
-      .col-md-4{
+
+      .col-md-4 {
         height: 516px;
       }
-      .btn{
+
+      .btn {
         padding: 7px;
-        margin:15px;
+        margin: 15px;
         background-color: #5a6dcd;
       }
+
+      #satoshi {
+        display: table-caption;
+        width: fit-content;
+      }
+      .button {
+    position: absolute;
+    top: 150px;
+    right: 700px;
+    font-size: 25px;
+    background-color: lightgray;
+    padding: 20px;
+}
     </style>
-   </head>
-<body>
+  </head>
 
+  <body>
 
-   <div id="nav">
+    <div id="content">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form action="" id="satoshi">
+        <textarea class="form-control" rows="10" cols="104" id="comment"></textarea>
 
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="https://10.0.0.10">home <span class="sr-only">(abyss)</span></a></li>
-        <li><a href="../index.html">home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desenvolvedor <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://www.similarweb.com/">similares</a></li>
-            <li><a href="https://www.woorank.com/pt">analise de webpag</a></li>
-            <li><a href="http://www.seoworkers.com/sitemap.html">mapa de pagina</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="http://www.w3schools.com/">intruções de web desen</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="http://getbootstrap.com/">bootstrap</a></li>
-          </ul>
-        </li>
-      </ul>
+        <input type="checkbox" id="sadako" name="subscribe" value="">
+        <label for="teste"></label>sadako</label>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="pg1.html">blog</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">musicas <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="youtube.html">youtube</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="playlist/phard.html">play list hard</a></li>
+        <input type="checkbox" id="hi_tori" name="subscribe" value="">
+        <label for="teste"></label>hi tori</label>
 
-          </ul>
-        </li>
+        <input type="checkbox" id="tor" name="subscribe" value="">
+        <label for="teste"> tori</label>
+      </form>
 
-      </ul>
-
-    </div><!-- /.navbar-collapse -->
-
-  </div><!-- /.container-fluid -->
-
-
-
-<div class="btn_container">
-<button onclick="make2()">Pronto</button>
-</div>
-
-
-
-
-
-<div id="content">
-<table align="left" border="0" cellpadding="0" cellspacing="0" topmargin="0" >
-<tr valign="top" id="columns">
-
-<td width="385">
-<table class="column" cellspacing="0" cellpadding="0">
-
-<tr class="item">
-  <td class="itemcontent">
-
- <form action="" id="satoshi">
-      <textarea  class="form-control" rows="10" cols="104" id="comment"></textarea>
       
-        <label for="teste">
-  <input type="checkbox" id="sadako" name="subscribe" value="">
-  sadako</label>
-   <label for="teste">
-  <input type="checkbox" id="hi_tori" name="subscribe" value="">
-  hi tori</label>
-  </td>
-</tr>
+    </div>
 
-</table>
-</div>
-</form>
-</td></tr></table></td></tr></table></div>
+    <div class="button" onclick="make2()">
+      Pronto
+    </div>
 
-<div id="corpo">
+    <div id="answer"></div>
 
 
 
+    <script src="sa.js"></script>
 
+  </body>
 
-
-
-
-
-
-
-
-</div>
-
-<script src="sa.js"></script>
-
-</body>
-</html>
+  </html>
